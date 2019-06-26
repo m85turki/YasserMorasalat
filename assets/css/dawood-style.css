@@ -1,0 +1,141 @@
+/** end general styles **/
+.dark-color {
+    color: #262B56;
+}
+.w-100
+{
+    width:100%;
+}
+.circle-icon{
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    font-size: 14pt;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 27px;
+    margin: 0px 2px;
+}
+.circle-icon.color-white{
+    display: inline-block;
+    background: #fff;
+    border:1px solid #bdbdbd;
+    color:#bdbdbd;
+}
+.white-container
+{
+    background: #fff;
+    border-radius: 3px;
+    padding:5px 10px;
+    box-shadow: 0px 3px 7px #ccc;
+    clear: both;
+    margin-bottom: 20px;
+}
+/** end general styles **/
+/** main tabs **/
+.custom-nav-tabs.nav-tabs>li {
+    min-width: 100px;
+    text-align: center;
+}
+.custom-nav-tabs.nav-tabs>li>a {
+    border: 2px solid #F2F2F6;
+    border-left-width: 0px;
+    border-radius: 0;
+    color:#B6B6B6;
+    background-color: #FEFEFE;
+    padding: 15px 2px;
+}
+.custom-nav-tabs.nav-tabs>li:first-child>a
+{
+    border-radius: 0px 5px 5px 0px;
+    overflow: hidden;
+}
+.custom-nav-tabs.nav-tabs>li:last-child>a
+{
+    border-left-width: 2px;
+    border-radius: 5px 0 0 5px;
+    overflow: hidden;
+}
+.custom-nav-tabs.nav-tabs>li>a>i
+{
+    font-size: 24px;
+}
+.custom-nav-tabs.nav-tabs>li.active>a,
+.custom-nav-tabs.nav-tabs>li.active>a:focus,
+.custom-nav-tabs.nav-tabs>li.active>a:hover 
+{
+    color: #3290E9;
+    background-color: #f7f7f9;
+    border: 1px solid #f1f2f5;
+    position:relative;
+    border: 0px; 
+    border-top: 3px solid #f1f2f5;
+}
+.custom-nav-tabs.nav-tabs>li.active>a::before
+{
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:5px;
+    width:100%;
+    background-color: #3290E9;
+}
+/** end main tabs **/
+/** sub tabs **/
+.custom-sub-nav-tabs.nav-tabs {
+    border: 0;
+}
+.custom-sub-nav-tabs.nav-tabs>li>a {
+    border: 0;
+    border-left-width: 0px;
+    border-radius: 0;
+    color:#676B88;
+    background-color: unset;
+    padding: 2px 15px;
+}
+.custom-sub-nav-tabs.nav-tabs>li.active>a,
+.custom-sub-nav-tabs.nav-tabs>li.active>a:focus,
+.custom-sub-nav-tabs.nav-tabs>li.active>a:hover 
+{
+    color: #262B56;
+    border: 0px; 
+    border-bottom: 5px solid #3290E9;
+    position:relative;
+}
+/** end sub tabs **/
+/** attach file icons **/
+.attach-file-icon-list
+{
+    list-style: none;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+    float: right;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.attach-file-icon-list li {
+    list-style: none;
+    display: inline-block;
+    float: right;
+}
+.attach-file-icon-list li button {
+    padding: 18px;
+    border: 0;
+    border-left: 1px solid #D9D9D9;
+    background-color: #fff;
+}
+.attach-file-icon-list li button:hover {
+    background-color: #D9D9D9;
+}
+.attach-file-icon-list li:last-child button
+{
+    border-left: 0px;
+}
+.attach-file-icon-list li button i {
+    font-size: 24px;
+    color:#000;
+}
