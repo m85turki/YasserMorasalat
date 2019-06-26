@@ -66,6 +66,9 @@
 .table.table-striped > tbody > tr td{
     color: #4A4A4A;
 }
+.table.table-striped > tbody tr td{
+    padding: 15px 5px;
+}
 /*** end tables **/
 /*** pagination **/
 .pagination.custom-pagination li.change-page a 
