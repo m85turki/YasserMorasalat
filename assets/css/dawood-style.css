@@ -31,6 +31,20 @@
     clear: both;
     margin-bottom: 20px;
 }
+/*** buttons **/
+.btn.btn-dark-blue
+{
+    color:#fff;
+    outline: 0;
+    background-color: #353C77;
+}
+.btn.btn-dark-blue:hover
+{
+    color:#353C77;
+    border-color:#353C77;
+    background-color: #fff;
+}
+/*** end buttons **/
 /** end general styles **/
 /** main tabs **/
 .custom-nav-tabs.nav-tabs>li {
@@ -113,7 +127,6 @@
     border-radius: 5px;
     overflow: hidden;
     display: inline-block;
-    float: right;
     margin-bottom: 5px;
     margin-left: 5px;
 }
@@ -123,7 +136,7 @@
     float: right;
 }
 .attach-file-icon-list li button {
-    padding: 18px;
+    padding: 15px;
     border: 0;
     border-left: 1px solid #D9D9D9;
     background-color: #fff;
@@ -139,3 +152,4 @@
     font-size: 24px;
     color:#000;
 }
+/** end attach file icons **/
