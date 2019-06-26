@@ -1,4 +1,13 @@
 /** end general styles **/
+html body .app-content.content
+{
+    overflow: inherit;
+}
+.close-icon
+{
+    margin-top:-10px;
+    padding-bottom:10px;
+}
 .dark-color {
     color: #262B56;
 }
@@ -22,14 +31,18 @@
     border:1px solid #bdbdbd;
     color:#bdbdbd;
 }
+.circle-icon.color-white:hover
+{
+    background: #f7f7f9;
+}
 .white-container
 {
     background: #fff;
     border-radius: 3px;
-    padding:5px 10px;
-    box-shadow: 0px 3px 7px #ccc;
+    padding:10px;
+    box-shadow: 0px 8px 20px 5px #00000017;
     clear: both;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 /*** buttons **/
 .btn.btn-dark-blue
@@ -43,6 +56,18 @@
     color:#353C77;
     border-color:#353C77;
     background-color: #fff;
+}
+.btn.btn-light-gray
+{
+    color:#262B56;
+    outline: 0;
+    background-color: #F8F8F8;
+    border-color:#262B56;
+}
+.btn.btn-light-gray:hover
+{
+    color:#fff;
+    background-color: #262B56;
 }
 /*** end buttons **/
 /*** tables **/
@@ -101,6 +126,10 @@
 /*** end pagination **/
 /** end general styles **/
 /** main tabs **/
+.custom-nav-tabs.nav-tabs{
+    border:0;
+}
+/** main tabs **/
 .custom-nav-tabs.nav-tabs>li {
     min-width: 100px;
     text-align: center;
@@ -111,7 +140,10 @@
     border-radius: 0;
     color:#A4A4A4;
     background-color: #FEFEFE;
-    padding: 15px 2px;
+    padding: 15px 5px;
+}
+.custom-nav-tabs.nav-tabs>li>a:hover {
+    background-color: #fbfbff;
 }
 .custom-nav-tabs.nav-tabs>li:first-child>a
 {
@@ -136,7 +168,6 @@
     background-color: #f7f7f9;
     border: 1px solid #f1f2f5;
     position:relative;
-    border: 0px; 
     border-top: 3px solid #f1f2f5;
 }
 .custom-nav-tabs.nav-tabs>li.active>a::before
@@ -155,13 +186,17 @@
 .custom-sub-nav-tabs.nav-tabs {
     border: 0;
 }
+.custom-sub-nav-tabs.nav-tabs>li>a:hover {
+    background-color: #f7f7f9;
+    border-bottom: 5px solid #ddd;
+}
 .custom-sub-nav-tabs.nav-tabs>li>a {
     border: 0;
     border-left-width: 0px;
     border-radius: 0;
     color:#676B88;
     background-color: unset;
-    padding: 2px 15px;
+    padding: 5px 15px;
 }
 .custom-sub-nav-tabs.nav-tabs>li.active>a,
 .custom-sub-nav-tabs.nav-tabs>li.active>a:focus,
@@ -195,8 +230,11 @@
     border-left: 1px solid #D9D9D9;
     background-color: #fff;
 }
-.attach-file-icon-list li button:hover {
+.attach-file-icon-list li.active button {
     background-color: #D9D9D9;
+}
+.attach-file-icon-list li button:hover {
+    background-color: #f7f7f9;
 }
 .attach-file-icon-list li:last-child button
 {
