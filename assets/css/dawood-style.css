@@ -231,7 +231,7 @@ html body .app-content.content
     background-color: #fff;
 }
 .attach-file-icon-list li.active button {
-    background-color: #D9D9D9;
+    background-color: #dedede;
 }
 .attach-file-icon-list li button:hover {
     background-color: #f7f7f9;
