@@ -44,7 +44,35 @@ html body .app-content.content
     clear: both;
     margin-bottom: 30px;
 }
+.gray-box
+{
+    border:1px solid #DFDFDF;
+    border-radius:5px;
+    background-color: #F8F8F8;
+    padding:10px 5px;
+}
+.circle-img
+{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
 /*** buttons **/
+.btn
+{
+    min-width:80px;
+}
+.btn.btn-cancel
+{
+    background-color: #F8F8FA;
+    border-color: #4A90E2;
+    color:#4A90E2;
+}
+.btn.btn-cancel:hover
+{
+    background-color: #4A90E2;
+    color:#fff;
+}
 .btn.btn-dark-blue
 {
     color:#fff;
