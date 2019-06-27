@@ -721,7 +721,7 @@ a.aExplanation {
 
 
     .box.green {
-        border-top: 3px solid #297179;
+        border-top: 5px solid #297179;
     }
 
         .box.green .correspondence-h .administration {
@@ -730,7 +730,7 @@ a.aExplanation {
 
 
     .box.red {
-        border-top: 3px solid #E7111D;
+        border-top: 5px solid #E7111D;
     }
 
         .box.red .correspondence-h .administration {
@@ -738,7 +738,7 @@ a.aExplanation {
         }
 
     .box.yellow {
-        border-top: 3px solid #efc150;
+        border-top: 5px solid #efc150;
     }
 
         .box.yellow .correspondence-h .administration {
@@ -746,7 +746,7 @@ a.aExplanation {
         }
 
     .box.blue {
-        border-top: 3px solid #3B90EC;
+        border-top: 5px solid #3B90EC;
     }
 
         .box.blue .correspondence-h .administration {
@@ -754,7 +754,7 @@ a.aExplanation {
         }
 
     .box.gray {
-        border-top: 3px solid rgba(122, 122, 122, 0.40);
+        border-top: 5px solid rgba(122, 122, 122, 0.40);
     }
 
         .box.gray .correspondence-h .administration {
@@ -762,7 +762,7 @@ a.aExplanation {
         }
 
     .box.bluedark {
-        border-top: 3px solid #262B56;
+        border-top: 5px solid #262B56;
     }
 
         .box.bluedark .correspondence-h .administration {
