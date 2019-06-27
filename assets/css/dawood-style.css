@@ -61,6 +61,11 @@ html body .app-content.content
     height:60px;
     border-radius: 50%;
 }
+.sort-icons
+{
+    font-size: 20px;
+    vertical-align: middle;
+}
 /*** buttons **/
 .btn
 {
@@ -190,7 +195,7 @@ html body .app-content.content
 }
 .custom-nav-tabs.nav-tabs>li>a>i
 {
-    font-size: 24px;
+    font-size: 27px;
 }
 .custom-nav-tabs.nav-tabs>li.active>a,
 .custom-nav-tabs.nav-tabs>li.active>a:focus,
@@ -257,7 +262,7 @@ html body .app-content.content
     float: right;
 }
 .attach-file-icon-list li button {
-    padding: 15px;
+    padding: 10px;
     border: 0;
     border-left: 1px solid #D9D9D9;
     background-color: #fff;
@@ -273,7 +278,7 @@ html body .app-content.content
     border-left: 0px;
 }
 .attach-file-icon-list li button i {
-    font-size: 24px;
+    font-size: 32px;
     color:#000;
 }
 /** end attach file icons **/
