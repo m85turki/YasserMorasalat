@@ -66,6 +66,10 @@ html body .app-content.content
     font-size: 20px;
     vertical-align: middle;
 }
+.align-middle
+{
+  vertical-align: middle;
+}
 /*** buttons **/
 .btn
 {
@@ -108,6 +112,13 @@ html body .app-content.content
 }
 /*** end buttons **/
 /*** tables **/
+.table > thead > tr {
+    background-color: #FBFBFB;
+}
+.table>thead>tr>th.align-middle
+{
+    vertical-align: middle;
+}
 .table>tbody>tr>td,
 .table>tbody>tr>th,
 .table>tfoot>tr>td,
