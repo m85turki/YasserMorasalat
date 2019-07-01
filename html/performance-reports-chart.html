@@ -462,13 +462,18 @@
                                     محمد علي محمد
                                 </label>
                             </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                <label for="">القسم</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected="">القسم الأول</option>
+                                    <option>القسم الثاني</option>
+                                    <option>القسم الثالث</option>
+                                </select>
+                            </div>
                         </div>
                         <div class="row m-0">
                             <div class="col-xs-12">
-                                <div class="mb-2">
-                                    <label class="d-inline-block">جدول التقارير</label>
-                                    <label class="dark-color d-inline-block mx-1">(3 سجلات)</label>
-                                </div>
                                 <div class="w-100">
                                     <div id="bar-chart"></div>
                                 </div>
@@ -570,8 +575,8 @@
                 ykeys: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
                 labels: ['المعاملات الصادرة', 'مسودة الخطاب المنشأة', 'مسودة الخطاب المحالة', 'المعاملات الواردة المنشأة', 'المعاملات الواردة المحالة',
                  'المعاملات الداخلية المنشأة', 'المعاملات الداخلية المحالة','المعاملات المتأخرة'],
-                barGap: 60,
-                barSizeRatio: 0.80,
+                barGap: 20,
+                barSizeRatio: 0.70,
                 smooth: true,
                 gridLineColor: '#e3e3e3',
                 numLines: 5,
