@@ -11,6 +11,10 @@ html body .app-content.content
 .dark-color {
     color: #262B56;
 }
+.w-auto
+{
+    width:auto;
+}
 .w-100
 {
     width:100%;
@@ -320,3 +324,126 @@ html body .app-content.content
     color: #C3C3C3;
 }
 /** end no data section **/
+/** modal **/
+.fade.in
+{
+    opacity:1;
+    background-color: #0000003b;
+}
+.modal-header, .modal-footer {
+    background-color: #F3F3F3;
+}
+.modal-header{
+    border-radius: 5px 5px 0 0;
+}
+.modal-dialog.medium-dialog
+{
+    min-width: 70%;
+}
+/** end modal **/
+/** custom tree **/
+.custom-tree .panel-group
+{
+    margin: 0;
+}
+.custom-tree.panel-group .panel {
+    border: 0;
+}
+.custom-tree .panel-default>.panel-heading .panel-title.dark-color a{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+}
+
+.custom-tree .panel-default>.panel-heading {
+    background-color: unset;
+    position: relative;
+    overflow: visible;
+    padding:0;
+}
+.custom-tree .panel-default>.panel-heading::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    right: -13px;
+    top: 14px;
+    position: absolute;
+    border: 2px solid #337ab7;
+    border-radius: 50%;
+    background: #337ab7;
+}
+.custom-tree li.list-group-item.has-sub .panel.panel-default
+{
+    box-shadow: unset;
+}
+.custom-tree ul.list-group {
+    position:relative;
+}
+.custom-tree li.list-group-item:not(.has-sub):hover , .custom-tree .panel-heading:hover
+{
+    background-color: #fafafa;
+    cursor:pointer;
+}
+.custom-tree li.list-group-item:not(.has-sub)::before {
+    content: '';
+    width: 2px;
+    height: calc(100% + 43px);
+    background: #337ab7;
+    position: absolute;
+    right: -7px;
+    top: -10px;
+}
+.custom-tree li.list-group-item:not(.has-sub)::after {
+    content: '';
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    right: -5px;
+    background: #337ab7;
+    top: 21px;
+}
+.custom-tree .panel>.panel-collapse>.list-group:last-child li.list-group-item:not(.has-sub):last-child::before {
+    height: calc(100% + 10px);
+}
+li.list-group-item.has-sub:not(:first-child)::before {
+    content: '';
+    width: 8px;
+    height: 2px;
+    position: absolute;
+    right: -5px;
+    background: #337ab7;
+    top: 30px;
+}
+.custom-tree li.list-group-item:not(.has-sub) label {
+    padding-right:20px;
+    display: block;
+    width: 100%;
+    color:#AAAAAA;
+    cursor: pointer;
+}
+.custom-tree li.list-group-item:not(.has-sub) label::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    right: 3px;
+    top: 14px;
+    position: absolute;
+    border: 2px solid #337ab7;
+    border-radius: 50%;
+}
+li.list-group-item.selected {
+    background: #F7F9FA;
+}
+li.list-group-item.selected label
+{
+    color: #3291E9;
+}
+.custom-tree li.list-group-item.selected:not(.has-sub)::after {
+    background: #3291E9;
+}
+.custom-tree li.list-group-item.selected:not(.has-sub) label::before
+{
+    background: #3291E9;
+    border-color: #3291E9;
+}
+/** end custom tree **/
