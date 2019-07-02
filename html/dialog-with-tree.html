@@ -229,15 +229,15 @@
                             <div class="panel-heading" role="tab" id="collapseListGroupHeading1">
                                 <h4 class="panel-title dark-color">
                                     <a class="collapsed" role="button" data-toggle="collapse" href="#collapseListGroup1"
-                                        aria-expanded="false" aria-controls="collapseListGroup1">
-                                        ااسم الإدارة الاولى
+                                    aria-expanded="false" aria-controls="collapseListGroup1">
                                     </a>
+                                    <label>اسم الإدارة الاولى</label>
                                 </h4>
                             </div>
                             <div id="collapseListGroup1" class="panel-collapse collapse" role="tabpanel"
                                 aria-labelledby="collapseListGroupHeading1" aria-expanded="false" style="height: 0px;">
                                 <ul class="list-group">
-                                    <li class="list-group-item selected"><label>اسم الإدارة الفرعية</label></li>
+                                    <li class="list-group-item"><label>اسم الإدارة الفرعية</label></li>
                                     <li class="list-group-item"><label>اسم الإدارة الفرعية</label></li>
                                     <li class="list-group-item has-sub">
                                         <div class="panel-group" role="tablist">
@@ -247,8 +247,8 @@
                                                         <a class="collapsed" role="button" data-toggle="collapse"
                                                             href="#collapseSubListGroup1" aria-expanded="false"
                                                             aria-controls="collapseSubListGroup1">
-                                                            اسم الإدارة الاولى
                                                         </a>
+                                                        <label>اسم الإدارة الاولى</label>
                                                     </h4>
                                                 </div>
                                                 <div id="collapseSubListGroup1" class="panel-collapse collapse"
@@ -268,7 +268,8 @@
                                                                                 href="#collapseSubListGroup12"
                                                                                 aria-expanded="false"
                                                                                 aria-controls="collapseSubListGroup12">
-                                                                                اسم الإدارة الاولى                                                                            </a>
+                                                                            </a>     
+                                                                            <label>اسم الإدارة الاولى</label>                                                                       </a>
                                                                         </h4>
                                                                     </div>
                                                                     <div id="collapseSubListGroup12"
@@ -366,11 +367,18 @@
         $(function () {
             $('.custom-tree li.list-group-item:not(.has-sub) label').click(function(){
                 $('.custom-tree li.list-group-item:not(.has-sub)').removeClass('selected');
+                $('.custom-tree .panel-title.dark-color').removeClass('selected');
                 $(this).parent().addClass('selected');
             });
             $('.custom-tree li.list-group-item:not(.has-sub)').click(function(){
                 $('.custom-tree li.list-group-item:not(.has-sub)').removeClass('selected');
+                $('.custom-tree .panel-title.dark-color').removeClass('selected');
                 $(this).addClass('selected');
+            });
+            $('.custom-tree .panel-title.dark-color label').click(function(){
+                $('.custom-tree li.list-group-item:not(.has-sub)').removeClass('selected');
+                $('.custom-tree .panel-title.dark-color').removeClass('selected');
+                $(this).parent().addClass('selected');
             });
 		});
     </script>
