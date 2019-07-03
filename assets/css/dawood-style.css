@@ -11,6 +11,10 @@ html body .app-content.content
 .dark-color {
     color: #262B56;
 }
+.color-red
+{
+color:#ff3636;
+}
 .w-auto
 {
     width:auto;
