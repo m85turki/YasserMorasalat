@@ -203,29 +203,21 @@
                 <div class="">
                     <form>
                         <div class="form-row">
-                            <!-- <div class="form-group col-lg-2 col-md-4 col-sm-6 col-xs-12">
-								<label for="">رقم المعاملة</label>
-								<input type="text" class="form-control">
-							</div> -->
                             <div class="form-group col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                 <label for="">نوع التقرير</label>
-                                <select id="inputState" class="form-control">
-                                    <option selected="">اختر</option>
-                                    <option>واردد</option>
-                                    <option>صادر</option>
-                                    <option>معاملة داخلية</option>
+                                <select id="report_type" class="form-control">
+                                    <option value="management" selected>اداء الإدارات</option>
+                                    <option value="employee">اداء الموظفين</option>
                                 </select>
                             </div>
                             <div class="form-group col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                 <label for="">طريقة العرض</label>
-                                <select id="inputState" class="form-control">
-                                    <option selected="">اختر</option>
-                                    <option>واردد</option>
-                                    <option>صادر</option>
-                                    <option>معاملة داخلية</option>
+                                <select class="form-control">
+                                    <option>جدول</option>
+                                    <option selected>رسم بياني</option>
                                 </select>
                             </div>
-                            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12 management-section">
                                 <label for="">الادارة</label>
                                 <div class="row">
                                     <div class=" col-xs-4 pl-2">
@@ -242,6 +234,13 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="form-group col-lg-2 col-md-2 col-sm-6 col-xs-12 employee-section">
+                                <label for="">الموظف</label>
+                                <select class="form-control">
+                                    <option selected="">اختر</option>
+                                    <option>...</option>
+                                </select>
                             </div>
                             <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                 <div class="col-sm-6 px-0 pl-md-2">
@@ -272,55 +271,77 @@
                         </div>
                         <hr>
                         <h3 class="site-color mr-3">حقول إضافية</h3>
-                        <div class="form-row pb-3">
+                        <div class="form-row pb-3 px-3">
                             <label class="container_checkbox mx-2">
-                                الوارد
-                                <input type="checkbox"  name="" data-trigger="hidden_fields_one"
-                                    class="trigger">
-                                <span class="checkmark"></span>
-                            </label>
-                            <label class="container_checkbox mx-2">
-                                اصحاب علاقة
-                                <input type="checkbox" name="" data-trigger="hidden_fields_two" class="trigger">
+                                مشتركة
+                                <input type="checkbox" name="" data-trigger="hidden_fields_one" class="trigger">
                                 <span class="checkmark"></span>
                             </label>
                         </div>
 
                         <div id="hidden_fields_one" class="hide_trigger">
                             <hr>
-                            <h3 class="site-color sub-title mr-3">الوارد</h3>
+                            <h3 class="site-color sub-title mr-3">مشتركة</h3>
                             <div class="form-row">
-                                <div class="form-group col-lg-2 col-md-4 col-sm-6 col-xs-12">
-                                    <label for="">نوع جهة الوارد</label>
-                                    <select id="inputState" class="form-control">
+                                <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                    <label for="">نوع الخطاب</label>
+                                    <select class="form-control">
                                         <option selected="">إختيار...</option>
                                         <option>...</option>
                                     </select>
                                 </div>
-
                                 <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                    <label for="">اصحاب علاقة</label>
-                                    <div class="row">
-                                        <div class=" col-xs-4 pl-2">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                        <div class=" col-xs-8 pr-2">
-                                            <div class="input-group">
-                                                <input type="text" class="form-control">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text hyperlink blue">
-                                                        <a href="#"><i class="la la-filter"></i></a>
-                                                    </span>
-                                                </div>
-                                            </div>
+                                    <label for="">درجة السرية</label>
+                                    <select class="form-control">
+                                        <option selected="">إختيار...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                    <label for="">درجة الأهمية</label>
+                                    <select class="form-control">
+                                        <option selected="">إختيار...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                    <label for="">طريقة الإستلام</label>
+                                    <select class="form-control">
+                                        <option selected="">إختيار...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                    <label for="">فيها موعد</label>
+                                    <select class="form-control">
+                                        <option selected="">إختيار...</option>
+                                        <option>نعم</option>
+                                        <option>لا</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                    <label for="">تاريخ الموعد</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text hyperlink">
+                                                <a href="#"><i class="far fa-calendar-alt"></i></a>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                    <label for="">التصنيف الموضوعي</label>
+                                    <select class="form-control">
+                                        <option selected="">إختيار...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                    <label for="">الملاحظات</label>
+                                    <input type="text" class="form-control">
+                                </div>
                             </div>
-                        </div>
-                        <div id="hidden_fields_two" class="hide_trigger">
-                            <hr>
-                            <h3 class="site-color sub-title mr-3">اصحاب علاقة</h3>
                         </div>
 
                         <hr>
@@ -379,7 +400,7 @@
                             </div>
                             <hr>
                             <div class="clearfix"></div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 management-section">
                                 <label for="">القسم</label>
                                 <select id="inputState" class="form-control">
                                     <option selected="">القسم الأول</option>
@@ -477,7 +498,7 @@
             Morris.Bar({
                 element: 'bar-chart',
                 data: [{
-                    y:'القسم 1',
+                    y: 'القسم 1',
                     a: 650,
                     b: 550,
                     c: 350,
@@ -490,7 +511,7 @@
                 xkey: 'y',
                 ykeys: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
                 labels: ['المعاملات الصادرة', 'مسودة الخطاب المنشأة', 'مسودة الخطاب المحالة', 'المعاملات الواردة المنشأة', 'المعاملات الواردة المحالة',
-                 'المعاملات الداخلية المنشأة', 'المعاملات الداخلية المحالة','المعاملات المتأخرة'],
+                    'المعاملات الداخلية المنشأة', 'المعاملات الداخلية المحالة', 'المعاملات المتأخرة'],
                 barGap: 20,
                 barSizeRatio: 0.70,
                 smooth: true,
@@ -499,25 +520,43 @@
                 gridtextSize: 14,
                 fillOpacity: 0.4,
                 resize: true,
-                barColors: ['#387AC5', '#8FE1A1', '#C3C538', '#C56E38', '#E1D38F', '#8D38C5', '#E73232' , '#4A38C5']
+                barColors: ['#387AC5', '#8FE1A1', '#C3C538', '#C56E38', '#E1D38F', '#8D38C5', '#E73232', '#4A38C5']
             });
         });
     </script>
     <style>
-    .morris-hover.morris-default-style div {
-        display: inline-block;
-        margin: 5px 10px;
-        position: relative;
-        padding-right: 20px;
-        min-width:20%;
-        font-weight: 600;
-        font-size: 12px;
-    }
-    .morris-hover.morris-default-style .morris-hover-row-label
-    {
-        display: none;
-    }
+        .morris-hover.morris-default-style div {
+            display: inline-block;
+            margin: 5px 10px;
+            position: relative;
+            padding-right: 20px;
+            min-width: 20%;
+            font-weight: 600;
+            font-size: 12px;
+        }
+
+        .morris-hover.morris-default-style .morris-hover-row-label {
+            display: none;
+        }
+
+        .employee-section {
+            display: none;
+        }
     </style>
+    <script>
+        $(function () {
+            $('#report_type').change(function () {
+                if ($(this).val() == 'management') {
+                    $('.management-section').show();
+                    $('.employee-section').hide();
+                }
+                else if ($(this).val() == 'employee') {
+                    $('.management-section').hide();
+                    $('.employee-section').show();
+                }
+            });
+        });
+    </script>
     <!-- end charts scripts -->
 </body>
 

@@ -44,6 +44,12 @@
 
 	<!-- Dawood CSS -->
 	<link href="../assets/css/dawood-style.css" rel="stylesheet">
+	<style>
+	.employee-section
+	{
+		display: none;
+	}
+	</style>
 
 </head>
 
@@ -203,46 +209,45 @@
 				<div class="">
 					<form>
 						<div class="form-row">
-							<!-- <div class="form-group col-lg-2 col-md-4 col-sm-6 col-xs-12">
-								<label for="">رقم المعاملة</label>
-								<input type="text" class="form-control">
-							</div> -->
 							<div class="form-group col-lg-3 col-md-3 col-sm-6 col-xs-12">
 								<label for="">نوع التقرير</label>
-								<select id="inputState" class="form-control">
-									<option selected="">اختر</option>
-									<option>واردد</option>
-									<option>صادر</option>
-									<option>معاملة داخلية</option>
+								<select id="report_type" class="form-control">
+									<option value="management" selected>اداء الإدارات</option>
+									<option value="employee">اداء الموظفين</option>
 								</select>
 							</div>
 							<div class="form-group col-lg-3 col-md-3 col-sm-6 col-xs-12">
 								<label for="">طريقة العرض</label>
-								<select id="inputState" class="form-control">
-									<option selected="">اختر</option>
-									<option>واردد</option>
-									<option>صادر</option>
-									<option>معاملة داخلية</option>
+								<select class="form-control">
+									<option selected>جدول</option>
+									<option>رسم بياني</option>
 								</select>
 							</div>
-                            <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <label for="">الادارة</label>
-                                <div class="row">
-                                    <div class=" col-xs-4 pl-2">
-                                        <input placeholder="رقم الجهة" type="text" class="form-control">
-                                    </div>
-                                    <div class=" col-xs-8 pr-2">
-                                        <div class="input-group">
-                                            <input placeholder="اسم جهة الوارد" type="text" class="form-control">
-                                            <div class="input-group-append">
-                                                <span class="input-group-text hyperlink blue">
-                                                    <a href="#"><i class="la la-filter"></i></a>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+							<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12 management-section">
+								<label for="">الادارة</label>
+								<div class="row">
+									<div class=" col-xs-4 pl-2">
+										<input placeholder="رقم الجهة" type="text" class="form-control">
+									</div>
+									<div class=" col-xs-8 pr-2">
+										<div class="input-group">
+											<input placeholder="اسم جهة الوارد" type="text" class="form-control">
+											<div class="input-group-append">
+												<span class="input-group-text hyperlink blue">
+													<a href="#"><i class="la la-filter"></i></a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group col-lg-2 col-md-2 col-sm-6 col-xs-12 employee-section">
+								<label for="">الموظف</label>
+								<select class="form-control">
+									<option selected="">اختر</option>
+									<option>...</option>
+								</select>
+							</div>
 							<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
 								<div class="col-sm-6 px-0 pl-md-2">
 									<label for="">التاريخ من</label>
@@ -272,55 +277,77 @@
 						</div>
 						<hr>
 						<h3 class="site-color mr-3">حقول إضافية</h3>
-						<div class="form-row pb-3">
+						<div class="form-row pb-3 px-3">
 							<label class="container_checkbox mx-2">
-								الوارد
-								<input type="checkbox" name="" data-trigger="hidden_fields_one"
-									class="trigger">
-								<span class="checkmark"></span>
-							</label>
-							<label class="container_checkbox mx-2">
-								خصائص مشتركة
-								<input type="checkbox" name="" data-trigger="hidden_fields_two" class="trigger">
+								مشتركة
+								<input type="checkbox" name="" data-trigger="hidden_fields_one" class="trigger">
 								<span class="checkmark"></span>
 							</label>
 						</div>
 
 						<div id="hidden_fields_one" class="hide_trigger">
 							<hr>
-							<h3 class="site-color sub-title mr-3">الوارد</h3>
+							<h3 class="site-color sub-title mr-3">مشتركة</h3>
 							<div class="form-row">
-								<div class="form-group col-lg-2 col-md-4 col-sm-6 col-xs-12">
-									<label for="">نوع جهة الوارد</label>
-									<select id="inputState" class="form-control">
+								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<label for="">نوع الخطاب</label>
+									<select class="form-control">
 										<option selected="">إختيار...</option>
 										<option>...</option>
 									</select>
 								</div>
-
 								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									<label for="">اصحاب علاقة</label>
-									<div class="row">
-										<div class=" col-xs-4 pl-2">
-											<input type="text" class="form-control">
-										</div>
-										<div class=" col-xs-8 pr-2">
-											<div class="input-group">
-												<input type="text" class="form-control">
-												<div class="input-group-append">
-													<span class="input-group-text hyperlink blue">
-														<a href="#"><i class="la la-filter"></i></a>
-													</span>
-												</div>
-											</div>
+									<label for="">درجة السرية</label>
+									<select class="form-control">
+										<option selected="">إختيار...</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<label for="">درجة الأهمية</label>
+									<select class="form-control">
+										<option selected="">إختيار...</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<label for="">طريقة الإستلام</label>
+									<select class="form-control">
+										<option selected="">إختيار...</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<label for="">فيها موعد</label>
+									<select class="form-control">
+										<option selected="">إختيار...</option>
+										<option>نعم</option>
+										<option>لا</option>
+									</select>
+								</div>
+								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<label for="">تاريخ الموعد</label>
+									<div class="input-group">
+										<input type="text" class="form-control">
+										<div class="input-group-append">
+											<span class="input-group-text hyperlink">
+												<a href="#"><i class="far fa-calendar-alt"></i></a>
+											</span>
 										</div>
 									</div>
 								</div>
+								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<label for="">التصنيف الموضوعي</label>
+									<select class="form-control">
+										<option selected="">إختيار...</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<label for="">الملاحظات</label>
+									<input type="text" class="form-control">
+								</div>
 							</div>
-						</div>
-						<div id="hidden_fields_two" class="hide_trigger">
-							<hr>
-							<h3 class="site-color sub-title mr-3">خصائص مشتركة</h3>
 						</div>
 
 						<hr>
@@ -389,32 +416,33 @@
 									<table class="table table-bordered">
 										<thead>
 											<tr>
-												<th class="align-middle">اسم الادارة</th>
+												<th class="align-middle management-section">اسم الادارة</th>
+												<th class="align-middle employee-section">اسم الموظف</th>
 												<th class="align-middle">المعاملات الصادرة</th>
 												<th class="px-0">
-                                                    <div class="row m-0">
-                                                        <div class="text-center col-xs-12 mb-2">مسودة الخطاب</div>
-                                                        <hr>
-                                                        <div class="text-center col-xs-6">المنشأة</div>
-                                                        <div class="text-center col-xs-6">المحالة</div>
-                                                    </div>
-                                                </th>
+													<div class="row m-0">
+														<div class="text-center col-xs-12 mb-2">مسودة الخطاب</div>
+														<hr>
+														<div class="text-center col-xs-6">المنشأة</div>
+														<div class="text-center col-xs-6">المحالة</div>
+													</div>
+												</th>
 												<th class="px-0">
-                                                    <div class="row m-0">
-                                                        <div class="text-center col-xs-12 mb-2">المعاملات الواردة</div>
-                                                        <hr>
-                                                        <div class="text-center col-xs-6">المنشأة</div>
-                                                        <div class="text-center col-xs-6">المحالة</div>
-                                                    </div>
-                                                </th>
+													<div class="row m-0">
+														<div class="text-center col-xs-12 mb-2">المعاملات الواردة</div>
+														<hr>
+														<div class="text-center col-xs-6">المنشأة</div>
+														<div class="text-center col-xs-6">المحالة</div>
+													</div>
+												</th>
 												<th class="px-0">
-                                                    <div class="row m-0">
-                                                        <div class="text-center col-xs-12 mb-2">المعاملات الداخلية</div>
-                                                        <hr>
-                                                        <div class="text-center col-xs-6">المنشأة</div>
-                                                        <div class="text-center col-xs-6">المحالة</div>
-                                                    </div>
-                                                </th>
+													<div class="row m-0">
+														<div class="text-center col-xs-12 mb-2">المعاملات الداخلية</div>
+														<hr>
+														<div class="text-center col-xs-6">المنشأة</div>
+														<div class="text-center col-xs-6">المحالة</div>
+													</div>
+												</th>
 												<th class="align-middle">المعاملات المتأخرة</th>
 											</tr>
 										</thead>
@@ -422,93 +450,93 @@
 											<tr>
 												<td class="text-center">القسم 1</td>
 												<td class="text-center">10</td>
-												<td>                  
-                                                    <div class="row m-0">
-                                                        <div class="text-center col-xs-6">4</div>
-                                                        <div class="text-center col-xs-6">5</div>
-                                                    </div>
-                                                </td>
-												<td>                  
-                                                    <div class="row m-0">
-                                                        <div class="text-center col-xs-6">4</div>
-                                                        <div class="text-center col-xs-6">5</div>
-                                                    </div>
-                                                </td>
-												<td>                  
-                                                    <div class="row m-0">
-                                                        <div class="text-center col-xs-6">4</div>
-                                                        <div class="text-center col-xs-6">5</div>
-                                                    </div>
-                                                </td>
+												<td>
+													<div class="row m-0">
+														<div class="text-center col-xs-6">4</div>
+														<div class="text-center col-xs-6">5</div>
+													</div>
+												</td>
+												<td>
+													<div class="row m-0">
+														<div class="text-center col-xs-6">4</div>
+														<div class="text-center col-xs-6">5</div>
+													</div>
+												</td>
+												<td>
+													<div class="row m-0">
+														<div class="text-center col-xs-6">4</div>
+														<div class="text-center col-xs-6">5</div>
+													</div>
+												</td>
 												<td class="text-center">8</td>
 											</tr>
 											<tr>
 												<td class="text-center">القسم 1</td>
 												<td class="text-center">10</td>
-												<td>                  
-                                                    <div class="row m-0">
-                                                        <div class="text-center col-xs-6">4</div>
-                                                        <div class="text-center col-xs-6">5</div>
-                                                    </div>
-                                                </td>
-												<td>                  
-                                                    <div class="row m-0">
-                                                        <div class="text-center col-xs-6">4</div>
-                                                        <div class="text-center col-xs-6">5</div>
-                                                    </div>
-                                                </td>
-												<td>                  
-                                                    <div class="row m-0">
-                                                        <div class="text-center col-xs-6">4</div>
-                                                        <div class="text-center col-xs-6">5</div>
-                                                    </div>
-                                                </td>
+												<td>
+													<div class="row m-0">
+														<div class="text-center col-xs-6">4</div>
+														<div class="text-center col-xs-6">5</div>
+													</div>
+												</td>
+												<td>
+													<div class="row m-0">
+														<div class="text-center col-xs-6">4</div>
+														<div class="text-center col-xs-6">5</div>
+													</div>
+												</td>
+												<td>
+													<div class="row m-0">
+														<div class="text-center col-xs-6">4</div>
+														<div class="text-center col-xs-6">5</div>
+													</div>
+												</td>
 												<td class="text-center">8</td>
 											</tr>
 											<tr>
 												<td class="text-center">القسم 1</td>
 												<td class="text-center">10</td>
-												<td>                  
-                                                    <div class="row m-0">
-                                                        <div class="text-center col-xs-6">4</div>
-                                                        <div class="text-center col-xs-6">5</div>
-                                                    </div>
-                                                </td>
-												<td>                  
-                                                    <div class="row m-0">
-                                                        <div class="text-center col-xs-6">4</div>
-                                                        <div class="text-center col-xs-6">5</div>
-                                                    </div>
-                                                </td>
-												<td>                  
-                                                    <div class="row m-0">
-                                                        <div class="text-center col-xs-6">4</div>
-                                                        <div class="text-center col-xs-6">5</div>
-                                                    </div>
-                                                </td>
+												<td>
+													<div class="row m-0">
+														<div class="text-center col-xs-6">4</div>
+														<div class="text-center col-xs-6">5</div>
+													</div>
+												</td>
+												<td>
+													<div class="row m-0">
+														<div class="text-center col-xs-6">4</div>
+														<div class="text-center col-xs-6">5</div>
+													</div>
+												</td>
+												<td>
+													<div class="row m-0">
+														<div class="text-center col-xs-6">4</div>
+														<div class="text-center col-xs-6">5</div>
+													</div>
+												</td>
 												<td class="text-center">8</td>
 											</tr>
 											<tr>
 												<td class="text-center">القسم 1</td>
 												<td class="text-center">10</td>
-												<td>                  
-                                                    <div class="row m-0">
-                                                        <div class="text-center col-xs-6">4</div>
-                                                        <div class="text-center col-xs-6">5</div>
-                                                    </div>
-                                                </td>
-												<td>                  
-                                                    <div class="row m-0">
-                                                        <div class="text-center col-xs-6">4</div>
-                                                        <div class="text-center col-xs-6">5</div>
-                                                    </div>
-                                                </td>
-												<td>                  
-                                                    <div class="row m-0">
-                                                        <div class="text-center col-xs-6">4</div>
-                                                        <div class="text-center col-xs-6">5</div>
-                                                    </div>
-                                                </td>
+												<td>
+													<div class="row m-0">
+														<div class="text-center col-xs-6">4</div>
+														<div class="text-center col-xs-6">5</div>
+													</div>
+												</td>
+												<td>
+													<div class="row m-0">
+														<div class="text-center col-xs-6">4</div>
+														<div class="text-center col-xs-6">5</div>
+													</div>
+												</td>
+												<td>
+													<div class="row m-0">
+														<div class="text-center col-xs-6">4</div>
+														<div class="text-center col-xs-6">5</div>
+													</div>
+												</td>
 												<td class="text-center">8</td>
 											</tr>
 										</tbody>
@@ -640,6 +668,22 @@
 					$("#" + hide_triggerId).fadeIn();
 				} else {
 					$("#" + hide_triggerId).fadeOut();
+				}
+			});
+		});
+	</script>
+	<script>
+		$(function () {
+			$('#report_type').change(function () {
+				if($(this).val() == 'management')
+				{
+					$('.management-section').show();
+					$('.employee-section').hide();
+				}
+				else if($(this).val() == 'employee')
+				{
+					$('.management-section').hide();
+					$('.employee-section').show();
 				}
 			});
 		});
