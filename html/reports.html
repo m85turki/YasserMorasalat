@@ -209,11 +209,12 @@
 							</div>
 							<div class="form-group col-lg-2 col-md-4 col-sm-6 col-xs-12">
 								<label for="">نوع المعاملة</label>
-								<select id="inputState" class="form-control">
-									<option selected="">اختر</option>
-									<option>واردد</option>
-									<option>صادر</option>
+								<select placeholder="اختر" id="inputState" class="form-control">
+									<option selected="">الكل</option>
+									<option>صادر خارجي</option>
+									<option>وارد خارجي</option>
 									<option>معاملة داخلية</option>
+									<option>مسودة خطاب</option>
 								</select>
 							</div>
 							<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -267,7 +268,7 @@
 							<hr>
 							<h3 class="site-color sub-title mr-3">الوارد</h3>
 							<div class="form-row">
-								<div class="form-group col-lg-2 col-md-4 col-sm-6 col-xs-12">
+								<div class="form-group col-lg-3 col-md-5 col-sm-6 col-xs-12">
 									<label for="">نوع جهة الوارد</label>
 									<select id="inputState" class="form-control">
 										<option selected="">إختيار...</option>
@@ -275,15 +276,15 @@
 									</select>
 								</div>
 
-								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									<label for="">اصحاب علاقة</label>
+								<div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
+									<label for="">جهة الوارد</label>
 									<div class="row">
 										<div class=" col-xs-4 pl-2">
-											<input type="text" class="form-control">
+											<input placeholder="رقم الوارد" type="text" class="form-control">
 										</div>
 										<div class=" col-xs-8 pr-2">
 											<div class="input-group">
-												<input type="text" class="form-control">
+												<input placeholder="اسم جهة الوارد" type="text" class="form-control">
 												<div class="input-group-append">
 													<span class="input-group-text hyperlink blue">
 														<a href="#"><i class="la la-filter"></i></a>
@@ -294,97 +295,96 @@
 									</div>
 								</div>
 							</div>
-							<hr>
-							<h3 class="site-color mr-3">تصنيف الحقول</h3>
-							<div class="row m-0">
-								<div class="col-lg-3 col-md-4 col-sm-6">
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" value="">
-											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-										</label>
-										<label class="dark-color p-0">نص</label>
-									</div>
-								</div>
-								<div class="col-lg-3 col-md-4 col-sm-6">
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" value="">
-											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-										</label>
-										<label class="dark-color p-0">طريقة التسليم</label>
-									</div>
-								</div>
-								<div class="col-lg-3 col-md-4 col-sm-6">
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" value="">
-											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-										</label>
-										<label class="dark-color p-0">درجة السرية</label>
-									</div>
-								</div>
-								<div class="col-lg-3 col-md-4 col-sm-6">
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" value="">
-											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-										</label>
-										<label class="dark-color p-0">ملاحظات</label>
-									</div>
-								</div>
-								<div class="col-lg-3 col-md-4 col-sm-6">
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" value="">
-											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-										</label>
-										<label class="dark-color p-0">نص</label>
-									</div>
-								</div>
-								<div class="col-lg-3 col-md-4 col-sm-6">
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" value="">
-											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-										</label>
-										<label class="dark-color p-0">نص</label>
-									</div>
-								</div>
-								<div class="col-lg-3 col-md-4 col-sm-6">
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" value="">
-											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-										</label>
-										<label class="dark-color p-0">نص</label>
-									</div>
-								</div>
-								<div class="col-lg-3 col-md-4 col-sm-6">
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" value="">
-											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-										</label>
-										<label class="dark-color p-0">نص</label>
-									</div>
-								</div>
-								<div class="col-lg-3 col-md-4 col-sm-6">
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" value="">
-											<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-										</label>
-										<label class="dark-color p-0">نص</label>
-									</div>
-								</div>
-							</div>
 						</div>
 						<div id="hidden_fields_two" class="hide_trigger">
 							<hr>
 							<h3 class="site-color sub-title mr-3">اصحاب علاقة</h3>
 						</div>
-
+						<hr>
+						<h3 class="site-color mr-3">تصفية الحقول</h3>
+						<div class="row m-0">
+							<div class="col-lg-3 col-md-4 col-sm-6">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="">
+										<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+									</label>
+									<label class="dark-color p-0">نص</label>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="">
+										<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+									</label>
+									<label class="dark-color p-0">طريقة التسليم</label>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="">
+										<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+									</label>
+									<label class="dark-color p-0">درجة السرية</label>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="">
+										<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+									</label>
+									<label class="dark-color p-0">ملاحظات</label>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="">
+										<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+									</label>
+									<label class="dark-color p-0">نص</label>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="">
+										<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+									</label>
+									<label class="dark-color p-0">نص</label>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="">
+										<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+									</label>
+									<label class="dark-color p-0">نص</label>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="">
+										<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+									</label>
+									<label class="dark-color p-0">نص</label>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="">
+										<span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+									</label>
+									<label class="dark-color p-0">نص</label>
+								</div>
+							</div>
+						</div>
 						<hr>
 
 					</form>
@@ -410,7 +410,7 @@
 							<div class="col-lg-4 col-sm-6 p-0">
 								<div class="mb-3">
 									<img class="circle-img d-inline-block" src="../assets/images/pro_pic.png" />
-									<h3 class="dark-color mx-1 d-inline-block">رقم المعاملة</h3>
+									<h3 class="dark-color mx-1 d-inline-block">وزارة الداخلية</h3>
 								</div>
 							</div>
 						</div>
@@ -448,6 +448,7 @@
 								</label>
 							</div>
 						</div>
+						<hr>
 						<div class="row m-0">
 							<div class="col-xs-12">
 								<div class="mb-2">
