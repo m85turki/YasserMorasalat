@@ -177,11 +177,12 @@
                         </div>
                         <div class="form-group col-lg-2 col-md-4 col-sm-6 col-xs-12">
                             <label for="">نوع المعاملة</label>
-                            <select id="inputState" class="form-control">
-                                <option selected="">اختر</option>
-                                <option>واردد</option>
-                                <option>صادر</option>
+                            <select placeholder="اختر" id="inputState" class="form-control">
+                                <option selected="">الكل</option>
+                                <option>صادر خارجي</option>
+                                <option>وارد خارجي</option>
                                 <option>معاملة داخلية</option>
+                                <option>مسودة خطاب</option>
                             </select>
                         </div>
                         <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
@@ -220,7 +221,7 @@
                     <div class="form-row pb-3">
                         <label class="container_checkbox mx-2">
                             الوارد
-                            <input type="checkbox" checked="checked" name="" data-trigger="hidden_fields_one"
+                            <input type="checkbox" name="" data-trigger="hidden_fields_one"
                                 class="trigger">
                             <span class="checkmark"></span>
                         </label>
@@ -241,7 +242,7 @@
                         </label>
                     </div>
 
-                    <div id="hidden_fields_one" class="">
+                    <div id="hidden_fields_one" class="hide_trigger">
                         <h3 class="site-color sub-title mr-3">الوارد</h3>
                         <div class="form-row">
                             <div class="form-group col-lg-2 col-md-4 col-sm-6 col-xs-12">

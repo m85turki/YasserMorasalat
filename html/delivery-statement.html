@@ -207,14 +207,20 @@
 							</div>
 							<div class="form-group col-lg-2 col-md-4 col-sm-6 col-xs-12">
 								<label for="">نوع المعاملة</label>
+								<select placeholder="اختر" id="inputState" class="form-control">
+									<option selected="">الكل</option>
+									<option>صادر خارجي</option>
+									<option>وارد خارجي</option>
+									<option>معاملة داخلية</option>
+									<option>مسودة خطاب</option>
+								</select>
+							</div>
+							<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+								<label for="">الموظف</label>
 								<select id="inputState" class="form-control">
 									<option selected="">إختيار...</option>
 									<option>...</option>
 								</select>
-							</div>
-							<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<label for="">وصف المعاملة</label>
-								<input type="text" class="form-control">
 							</div>
 							<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
 								<div class="col-sm-6 px-0 pl-md-2">
@@ -247,7 +253,7 @@
 						<h3 class="site-color mr-3">حقول إضافية</h3>
 						<div class="form-row pb-3">
 							<label class="container_checkbox  mr-3 ml-4">الوارد
-								<input type="checkbox" checked="checked" name="" data-trigger="hidden_fields_one"
+								<input type="checkbox" name="" data-trigger="hidden_fields_one"
 									class="trigger">
 								<span class="checkmark"></span>
 							</label>
@@ -257,7 +263,7 @@
 							</label>
 						</div>
 
-						<div id="hidden_fields_one" class="">
+						<div id="hidden_fields_one" class="hide_trigger">
 							<h3 class="site-color sub-title mr-3">الوارد</h3>
 							<div class="form-row">
 								<div class="form-group col-lg-2 col-md-4 col-sm-6 col-xs-12">
