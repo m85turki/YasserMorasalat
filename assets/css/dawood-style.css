@@ -346,6 +346,10 @@ color:#ff3636;
 .modal-header{
     border-radius: 5px 5px 0 0;
 }
+.modal-dialog.large-dialog
+{
+    min-width: 90%;
+}
 .modal-dialog.medium-dialog
 {
     min-width: 70%;
