@@ -476,7 +476,16 @@
                                                 <li>
                                                     <button>
                                                         <i class="icon-toolbar3">
-                                                            <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span>
+                                                            <span class="path1"></span><span class="path2"></span><span
+                                                                class="path3"></span><span class="path4"></span><span
+                                                                class="path5"></span><span class="path6"></span><span
+                                                                class="path7"></span><span class="path8"></span><span
+                                                                class="path9"></span><span class="path10"></span><span
+                                                                class="path11"></span><span class="path12"></span><span
+                                                                class="path13"></span><span class="path14"></span><span
+                                                                class="path15"></span><span class="path16"></span><span
+                                                                class="path17"></span><span class="path18"></span><span
+                                                                class="path19"></span><span class="path20"></span>
                                                         </i>
                                                     </button>
                                                 </li>
@@ -567,12 +576,95 @@
                             </div>
                             <div role="tabpanel" class="tab-pane" id="sub-tab-2">
                                 <div class="row m-0 my-2">
-                                    <div class="pull-left">
-                                        <a href="#" class="dark-color mx-2">
-                                            <i class="sort-icons icon-filter mx-1"></i>تصفية                                        </a>
-                                        <a href="#" class="dark-color mx-2">
+                                    <div class="w-100 text-left">
+                                        <label class="cursor-pointer dark-color mx-2 filter-target">
+                                            <i class="sort-icons icon-filter mx-1"></i>تصفية
+                                        </label>
+                                        <label class="cursor-pointer dark-color mx-2 sort-target">
                                             <i class="sort-icons icon-sort mx-1"></i>ترتيب حسب
-                                        </a>
+                                        </label>
+                                    </div>
+                                    <div class="filter-box filter">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <label for="">اسم الحقل</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <label for="">القيم القديمة</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <label for="">القيم الجديدة</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <label for="">تاريخ الإنشاء</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text hyperlink">
+                                                                <a href="#"><i class="far fa-calendar-alt"></i></a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <label for="">تاريخ التعديل</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text hyperlink">
+                                                                <a href="#"><i class="far fa-calendar-alt"></i></a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <label for="">المستخدم الذي قام بالإنشاء</label>
+                                                    <select placeholder="اختر" id="inputState" class="form-control">
+                                                        <option selected="">اختر</option>
+                                                        <option>.....</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <label for="">المستخدم الذي قام بالتعديل</label>
+                                                    <select placeholder="اختر" id="inputState" class="form-control">
+                                                        <option selected="">اختر</option>
+                                                        <option>.....</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="filter-box sort">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                    <label for="">تاريخ الإنشاء</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text hyperlink">
+                                                                <a href="#"><i class="far fa-calendar-alt"></i></a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                    <label for="">تاريخ التعديل</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text hyperlink">
+                                                                <a href="#"><i class="far fa-calendar-alt"></i></a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                                 <div class="table-responsive">
@@ -799,7 +891,7 @@
                                 <div class="row m-0 my-2">
                                     <div class="pull-left">
                                         <a href="#" class="dark-color mx-2">
-                                            <i class="sort-icons icon-filter mx-1"></i>تصفية                                        </a>
+                                            <i class="sort-icons icon-filter mx-1"></i>تصفية </a>
                                         <a href="#" class="dark-color mx-2">
                                             <i class="sort-icons icon-sort mx-1"></i>ترتيب حسب
                                         </a>
@@ -840,7 +932,8 @@
                                                 <td>28 تشرين الثاني 2019</td>
                                                 <td>وصف المهمة</td>
                                                 <td>ملاحظات</td>
-                                                <td><button class="btn btn-light-gray"><i class="fa fa-paperclip mx-1"></i>file.pdf</button></td>
+                                                <td><button class="btn btn-light-gray"><i
+                                                            class="fa fa-paperclip mx-1"></i>file.pdf</button></td>
                                             </tr>
                                             <tr>
                                                 <td>الإدارة</td>
@@ -927,7 +1020,23 @@
         });
     </script>
 
-
+    <!-- sort and filter scripts-->
+    <script>
+        $(document).ready(function () {
+            $('.filter-target').click(function () {
+                $('.filter-box.filter').toggle();
+                $('.sort-target').removeClass("active");
+                $(this).toggleClass("active");
+                $('.filter-box.sort').hide();
+            });
+            $('.sort-target').click(function () {
+                $('.filter-box.sort').toggle();
+                $('.filter-target').removeClass("active");
+                $(this).toggleClass("active");
+                $('.filter-box.filter').hide();
+            });
+        });
+    </script>
     <!-- Vertical Menu css-->
     <script src="../assets/plugins/vertical-menu/vendors.min.js"></script>
     <script src="../assets/plugins/vertical-menu/app-menu.min.js"></script>
