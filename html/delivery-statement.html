@@ -205,7 +205,7 @@
 								<label for="">رقم المعاملة</label>
 								<input type="text" class="form-control">
 							</div>
-							<div class="form-group col-lg-2 col-md-4 col-sm-6 col-xs-12">
+							<div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
 								<label for="">نوع المعاملة</label>
 								<select placeholder="اختر" id="inputState" class="form-control">
 									<option selected="">الكل</option>
@@ -215,7 +215,7 @@
 									<option>مسودة خطاب</option>
 								</select>
 							</div>
-							<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+							<div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
 								<label for="">الموظف</label>
 								<select id="inputState" class="form-control">
 									<option selected="">إختيار...</option>
@@ -252,37 +252,115 @@
 						<hr>
 						<h3 class="site-color mr-3">حقول إضافية</h3>
 						<div class="form-row pb-3">
-							<label class="container_checkbox  mr-3 ml-4">الوارد
-								<input type="checkbox" name="" data-trigger="hidden_fields_one"
-									class="trigger">
+							<label class="container_checkbox mx-2">
+								مشتركة
+								<input type="checkbox" name="" data-trigger="hidden_fields_one" class="trigger">
 								<span class="checkmark"></span>
 							</label>
-							<label class="container_checkbox">أصحاب العلاقة
+							<label class="container_checkbox mx-2">
+								مسودة خطاب
 								<input type="checkbox" name="" data-trigger="hidden_fields_two" class="trigger">
+								<span class="checkmark"></span>
+							</label>
+							<label class="container_checkbox mx-2">
+								الوارد
+								<input type="checkbox" name="" data-trigger="hidden_fields_three" class="trigger">
+								<span class="checkmark"></span>
+							</label>
+							<label class="container_checkbox mx-2">
+								معاملات محالة
+								<input type="checkbox" name="" data-trigger="hidden_fields_four" class="trigger">
+								<span class="checkmark"></span>
+							</label>
+							<label class="container_checkbox mx-2">
+								الصادر
+								<input type="checkbox" name="" data-trigger="hidden_fields_five" class="trigger">
 								<span class="checkmark"></span>
 							</label>
 						</div>
 
 						<div id="hidden_fields_one" class="hide_trigger">
-							<h3 class="site-color sub-title mr-3">الوارد</h3>
+							<hr>
+							<h3 class="site-color sub-title mr-3">مشتركة</h3>
 							<div class="form-row">
-								<div class="form-group col-lg-2 col-md-4 col-sm-6 col-xs-12">
-									<label for="">نوع جهة الوارد</label>
-									<select id="inputState" class="form-control">
+								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<label for="">نوع الخطاب</label>
+									<select class="form-control">
 										<option selected="">إختيار...</option>
 										<option>...</option>
 									</select>
 								</div>
-
 								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									<label for="">جهة الوارد</label>
+									<label for="">درجة السرية</label>
+									<select class="form-control">
+										<option selected="">إختيار...</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<label for="">درجة الأهمية</label>
+									<select class="form-control">
+										<option selected="">إختيار...</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<label for="">طريقة الإستلام</label>
+									<select class="form-control">
+										<option selected="">إختيار...</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<label for="">فيها موعد</label>
+									<select class="form-control">
+										<option selected="">إختيار...</option>
+										<option>نعم</option>
+										<option>لا</option>
+									</select>
+								</div>
+								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<label for="">تاريخ الموعد</label>
+									<div class="input-group">
+										<input type="text" class="form-control">
+										<div class="input-group-append">
+											<span class="input-group-text hyperlink">
+												<a href="#"><i class="far fa-calendar-alt"></i></a>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<label for="">التصنيف الموضوعي</label>
+									<select class="form-control">
+										<option selected="">إختيار...</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<label for="">الملاحظات</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+						</div>
+						<div id="hidden_fields_two" class="hide_trigger">
+							<hr>
+							<h3 class="site-color sub-title mr-3">مسودة خطاب</h3>
+							<div class="form-row">
+								<div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-12">
+									<label for="">تاريخ الصادر</label>
+									<input type="text" class="form-control">
+								</div>
+
+								<div class="form-group col-lg-8 col-md-7 col-sm-6 col-xs-12">
+									<label for="">جهة الصادر</label>
 									<div class="row">
 										<div class=" col-xs-4 pl-2">
-											<input type="text" class="form-control">
+											<input placeholder="رقم الوارد" type="text" class="form-control">
 										</div>
 										<div class=" col-xs-8 pr-2">
 											<div class="input-group">
-												<input type="text" class="form-control">
+												<input placeholder="اسم جهة الوارد" type="text" class="form-control">
 												<div class="input-group-append">
 													<span class="input-group-text hyperlink blue">
 														<a href="#"><i class="la la-filter"></i></a>
@@ -294,12 +372,135 @@
 								</div>
 							</div>
 						</div>
-						<div id="hidden_fields_two" class="hide_trigger">
-							<h3 class="site-color sub-title mr-3">أصحاب العلاقة</h3>
+
+						<div id="hidden_fields_three" class="hide_trigger">
+							<hr>
+							<h3 class="site-color sub-title mr-3">الوارد</h3>
+							<div class="form-row">
+								<div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-12">
+									<label for="">نوع جهة الوارد</label>
+									<select id="inputState" class="form-control">
+										<option selected="">إختيار...</option>
+										<option>...</option>
+									</select>
+								</div>
+
+								<div class="form-group col-lg-8 col-md-7 col-sm-6 col-xs-12">
+									<label for="">جهة الوارد</label>
+									<div class="row">
+										<div class=" col-xs-4 pl-2">
+											<input placeholder="رقم الوارد" type="text" class="form-control">
+										</div>
+										<div class=" col-xs-8 pr-2">
+											<div class="input-group">
+												<input placeholder="اسم جهة الوارد" type="text" class="form-control">
+												<div class="input-group-append">
+													<span class="input-group-text hyperlink blue">
+														<a href="#"><i class="la la-filter"></i></a>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div><br>
+								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<label for="">تاريخ المعاملة الواردة</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<label for="">رقم المعاملة الواردة</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
 						</div>
+						<div id="hidden_fields_four" class="hide_trigger">
+							<hr>
+							<h3 class="site-color sub-title mr-3">معاملات محالة</h3>
+							<div class="form-row">
+								<div class="form-group col-lg-3 col-sm-6 col-xs-12">
+									<label for="">من الإدارة</label>
+									<input placeholder="رقم الجهة" type="text" class="form-control">
+								</div>
+								<div class="form-group col-lg-5 col-sm-6 col-xs-12">
+									<label for="">نوع جهة الوارد</label>
+									<div class="input-group">
+										<input placeholder="اسم جهة الوارد" type="text" class="form-control">
+										<div class="input-group-append">
+											<span class="input-group-text hyperlink blue">
+												<a href="#"><i class="la la-filter"></i></a>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group col-lg-4 col-sm-6 col-xs-12">
+									<label for="">من الموظف</label>
+									<select id="inputState" class="form-control">
+										<option selected="">إختيار...</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group col-lg-3 col-sm-6 col-xs-12">
+									<label for="">الى الإدارة</label>
+									<input placeholder="رقم الجهة" type="text" class="form-control">
+								</div>
+								<div class="form-group col-lg-5 col-sm-6 col-xs-12">
+									<label for="">نوع جهة الوارد</label>
+									<div class="input-group">
+										<input placeholder="اسم جهة الوارد" type="text" class="form-control">
+										<div class="input-group-append">
+											<span class="input-group-text hyperlink blue">
+												<a href="#"><i class="la la-filter"></i></a>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-group col-lg-4 col-sm-6 col-xs-12">
+									<label for="">الى الموظف</label>
+									<select id="inputState" class="form-control">
+										<option selected="">إختيار...</option>
+										<option>...</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div id="hidden_fields_five" class="hide_trigger">
+							<hr>
+							<h3 class="site-color sub-title mr-3">الصادر</h3>
+							<div class="form-row">
+								<div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-12">
+									<label for="">تاريخ الصادر</label>
+									<input type="text" class="form-control">
+								</div>
 
+								<div class="form-group col-lg-8 col-md-7 col-sm-6 col-xs-12">
+									<label for="">جهة الصادر</label>
+									<div class="row">
+										<div class=" col-xs-4 pl-2">
+											<input placeholder="رقم الوارد" type="text" class="form-control">
+										</div>
+										<div class=" col-xs-8 pr-2">
+											<div class="input-group">
+												<input placeholder="اسم جهة الوارد" type="text" class="form-control">
+												<div class="input-group-append">
+													<span class="input-group-text hyperlink blue">
+														<a href="#"><i class="la la-filter"></i></a>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div><br>
+								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<label for="">تاريخ المعاملة الواردة</label>
+									<input type="text" class="form-control">
+								</div>
+								<div class="form-group col-lg-4 col-md-4 col-sm-6 col-xs-12">
+									<label for="">رقم المعاملة الواردة</label>
+									<input type="text" class="form-control">
+								</div>
+							</div>
+						</div>
 						<hr>
-
 					</form>
 
 				</div>
