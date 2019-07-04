@@ -602,7 +602,8 @@
 								</div>
 								<div class="correspondence-icon d-flex flex-column flex-sm-row">
 									<div class="ml-auto d-flex">
-										<a class="circle color-blue dialog-delivery"><i class="la la-file-text"></i></a>
+										<a class="circle color-blue" data-toggle="modal" data-target="#myModal"><i
+												class="la la-file-text"></i></a>
 									</div>
 									<div class="mr-auto d-flex">
 										<div class="info">
@@ -680,7 +681,8 @@
 								</div>
 								<div class="correspondence-icon d-flex flex-column flex-sm-row">
 									<div class="ml-auto d-flex">
-										<a class="circle color-blue" href="#"><i class="la la-file-text"></i></a>
+										<a class="circle color-blue" data-toggle="modal" data-target="#myModal"
+											href="#"><i class="la la-file-text"></i></a>
 									</div>
 									<div class="mr-auto d-flex">
 										<div class="info">
@@ -758,7 +760,8 @@
 								</div>
 								<div class="correspondence-icon d-flex flex-column flex-sm-row">
 									<div class="ml-auto d-flex">
-										<a class="circle color-blue" href="#"><i class="la la-file-text"></i></a>
+										<a class="circle color-blue" data-toggle="modal" data-target="#myModal"
+											href="#"><i class="la la-file-text"></i></a>
 									</div>
 									<div class="mr-auto d-flex">
 										<div class="info">
@@ -836,7 +839,8 @@
 								</div>
 								<div class="correspondence-icon d-flex flex-column flex-sm-row">
 									<div class="ml-auto d-flex">
-										<a class="circle color-blue" href="#"><i class="la la-file-text"></i></a>
+										<a class="circle color-blue" data-toggle="modal" data-target="#myModal"
+											href="#"><i class="la la-file-text"></i></a>
 									</div>
 									<div class="mr-auto d-flex">
 										<div class="info">
@@ -914,7 +918,8 @@
 								</div>
 								<div class="correspondence-icon d-flex flex-column flex-sm-row">
 									<div class="ml-auto d-flex">
-										<a class="circle color-blue" href="#"><i class="la la-file-text"></i></a>
+										<a class="circle color-blue" data-toggle="modal" data-target="#myModal"
+											href="#"><i class="la la-file-text"></i></a>
 									</div>
 									<div class="mr-auto d-flex">
 										<div class="info">
@@ -992,7 +997,8 @@
 								</div>
 								<div class="correspondence-icon d-flex flex-column flex-sm-row">
 									<div class="ml-auto d-flex">
-										<a class="circle color-blue" href="#"><i class="la la-file-text"></i></a>
+										<a class="circle color-blue" data-toggle="modal" data-target="#myModal"
+											href="#"><i class="la la-file-text"></i></a>
 									</div>
 									<div class="mr-auto d-flex">
 										<div class="info">
@@ -1030,7 +1036,165 @@
 	</div>
 
 
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog large-dialog">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3 class="dark-color w-auto d-inline-block m-0">بيان التسليم</h3>
+				</div>
+				<div class="modal-body">
+					<div class="mb-3">
+						<img class="circle-img" src="../assets/images/pro_pic.png" />
+						<label class="dark-color mx-1">اسم الجهة</label>
+					</div>
+					<div class="row m-0">
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<label class="w-100">
+								رقم بيان التسليم  
+							</label>
+							<label class="dark-color">
+								2342353143534 
+							</label>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<label class="w-100">
+								تاريخ/وقت إنشاء بيان التسليم 
+							</label>
+							<label class="dark-color">
+								29 تشرين الثاني  12:00 ظهرا
+							</label>
+						</div>
+						<div class="col-lg-2 col-md-3 col-sm-6 mb-3">
+							<label class="w-100">
+								الإدارة المنشأة
+							</label>
+							<label class="dark-color">
+								الإدارة 1
+							</label>
+						</div>
+						<div class="col-lg-4 col-md-5 col-sm-6 mb-3">
+							<label class="w-100">
+							   تاريخ من / الى
+							</label>
+							<label class="dark-color">
+								من 29 تشرين الثاني  12:00 ظهرا الى 29 تشرين الثاني  12:00 ظهرا
+							</label>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<label class="w-100">
+								الموظف المنشئ
+							</label>
+							<label class="dark-color">
+								محمد الخطاب
+							</label>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<label class="w-100">
+								المراسل
+							</label>
+							<label class="dark-color">
+								محمد محمود
+							</label>
+						</div>
+						<div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+							<label class="w-100">
+								رمز التشفير
+							</label>
+							<label class="dark-color">
+								23423534543534
+							</label>
+						</div>
+					</div>
+					<h3 class="dark-color">جدول المعاملات (10 معاملات)</h3>
+					<div class="table-responsive">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>رقم المعاملة</th>
+									<th>الجهة / الإدارة المرسل لها</th>
+									<th>تاريخ إنشاء المعاملة</th>
+									<th>نوع المعاملة</th>
+									<th>نوع المرفق</th>
+									<th>عدد المرفقات</th>
+									<th>اسم المستلم</th>
+									<th>تاريخ الاستلام</th>
+									<th>توقيع المستلم</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>3254534553</td>
+									<td>الادارة 1 </td>
+									<td>29 تشرين الثاني</td>
+									<td>النوع 1</td>
+									<td>النوع 1</td>
+									<td>4</td>
+									<td>محمد محمود</td>
+									<td>29 تشرين الثاني</td>
+									<td>التوقيع</td>
+								</tr>
+								<tr>
+									<td>3254534553</td>
+									<td>الادارة 1 </td>
+									<td>29 تشرين الثاني</td>
+									<td>النوع 1</td>
+									<td>النوع 1</td>
+									<td>4</td>
+									<td>محمد محمود</td>
+									<td>29 تشرين الثاني</td>
+									<td>التوقيع</td>
+								</tr>
+								<tr>
+									<td>3254534553</td>
+									<td>الادارة 1 </td>
+									<td>29 تشرين الثاني</td>
+									<td>النوع 1</td>
+									<td>النوع 1</td>
+									<td>4</td>
+									<td>محمد محمود</td>
+									<td>29 تشرين الثاني</td>
+									<td>التوقيع</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<form>
+						<div class="form-row">
+							<div class="form-group col-lg-4 col-md-5 col-sm-6 col-xs-12">
+								<label for="">جهة الوارد</label>
+								<div class="row">
+									<div class=" col-xs-8 pr-2">
+										<div class="input-group">
+											<select placeholder="اختر" id="inputState" class="form-control">
+												<option selected="">الكل</option>
+												<option>صادر خارجي</option>
+												<option>وارد خارجي</option>
+												<option>معاملة داخلية</option>
+												<option>مسودة خطاب</option>
+											</select>			
+											<div class="input-group-append">
+												<span class="input-group-text hyperlink blue">
+													<a href="#"><i class="fa fa-plus"></i></a>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+					<br>
+					<div class="text-left">
+						<button class="nbt btn-primary btn-lg mx-1 mb-2">طباعة</button>
+						<button class="btn btn-primary btn-lg mx-1 mb-2" data-dismiss="modal">تصدير</button>
+					</div>
+				</div>
+			</div>
 
+		</div>
+	</div>
 
 
 	<!-- jQuery -->
@@ -1075,7 +1239,7 @@
 	<!-- jquery-confirm JS -->
 	<script type="text/javascript" src="../assets/plugins/confirm/jquery-confirm.min.js"></script>
 
-	<script>
+	<!--<script>
 		// confirmation
 		$('.dialog-delivery').on('click', function () {
 			$.confirm({
@@ -1111,7 +1275,7 @@
 			});
 		});
 
-	</script>
+	</script>-->
 
 	<!-- Checkbox hide -->
 	<script>
