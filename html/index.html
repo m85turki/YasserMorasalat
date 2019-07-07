@@ -263,20 +263,29 @@
 			</div>
 
 			<div class="content_container site_border">
+
+
+
 				<div class="content_container content_container--header">
-					<div class="d-flex flex-column flex-lg-row">
-						<div class="ml-auto filter-link">
-							<a class="active" href="#">
-								الكل (10 معاملات)
-							</a>
-							<a href="#">
-								فيها موعد  (6 معاملات)
-							</a>
-							<a href="#">
-								متأخرة  (4 معاملات)
-							</a>
-						</div>
-						<div class="mr-auto text-left options">
+					<div class="row m-0">
+						<ul class="col-lg-6 nav nav-tabs custom-sub-nav-tabs mb-3" role="tablist">
+							<li role="presentation" class="active">
+								<a href="#sub-tab-1" aria-controls="sub-tab-1" role="tab" data-toggle="tab">
+									الكل (10 معاملات)
+								</a>
+							</li>
+							<li role="presentation">
+								<a href="#sub-tab-2" aria-controls="sub-tab-2" role="tab" data-toggle="tab">
+									فيها موعد (6 معاملات)
+								</a>
+							</li>
+							<li role="presentation">
+								<a href="#sub-tab-3" aria-controls="sub-tab-3" role="tab" data-toggle="tab">
+									متأخرة (4 معاملات)
+								</a>
+							</li>
+						</ul>
+						<div class="col-lg-6 mr-auto text-left options">
 							<div class="checkbox">
 								<label for="selectAll">
 									<input id="selectAll" type="checkbox" value="">
@@ -299,633 +308,1727 @@
 					</div>
 				</div>
 				<div class="content_container content_container--body">
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active" id="sub-tab-1">
+							<div class="boxes">
+								<div class="d-flex flex-wrap align-content-start">
+									<div class="box-grid two">
+										<div class="box bluedark animated zoomIn buttons-action">
 
-					<div class="boxes">
-						<div class="d-flex flex-wrap align-content-start">
-							<div class="box-grid two">
-								<div class="box bluedark animated zoomIn buttons-action">
-
-									<div class="correspondence-t">
-										<div class="d-flex">
-											<div class="">
-												معاملة داخلية
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														معاملة داخلية
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
 											</div>
-											<div class="mr-auto d-flex">
-												<div class="checkbox">
-													<label>
-														<input type="checkbox" value="">
-														<span class="cr"><i
-																class="cr-icon glyphicon glyphicon-ok"></i></span>
-													</label>
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
+
+											</div>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+													<a class="circle color-green" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-orange" href="#"><i
+															class="la la-plus-square"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="correspondence-h">
-										<div class="title">
-											وزارة الداخلية
-										</div>
-										<div class="date">
-											28 تشرين الثاني 2018
-										</div>
-									</div>
-									<div class="correspondence-b d-flex flex-wrap">
-										<div class="f-line">
-											<div class="heading">الرقم</div>
-											<div>2233548</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">الأهمية</div>
-											<div class="text-danger">عاجل</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">السرية</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">النوع</div>
-											<div>تعميم</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">السرية</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">التصنيف</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">أيام التأخير</div>
-											<div>22</div>
-										</div>
-										<div class="f-line w-big">
-											<div class="heading">الموعد المحدد</div>
-											<div>28 تشرين الثاني 2019</div>
-										</div>
+									<div class="box-grid two">
+										<div class="box blue animated zoomIn buttons-action">
 
-									</div>
-									<div class="correspondence-icon w-100 d-inline-block">
-										<div class="d-inline-block">
-											<a class="circle color-blue" href="#"><i class="la la-pencil"></i></a>
-											<a class="circle color-red" href="#"><i class="la la-plus-square"></i></a>
-											<a class="circle color-gray" href="#"><i class="la la-file-text"></i></a>
-											<a class="circle color-green" href="#"><i class="la la-pencil"></i></a>
-											<a class="circle color-orange" href="#"><i class="la la-plus-square"></i></a>
-											<a class="circle color-blue" href="#"><i class="la la-file-text"></i></a>
-										</div>
-										<div class="d-inline-block pull-left">
-											<div class="info">
-												<i class="la la-paperclip"></i>
-												<span class=""><span>10</span> مرفقات </span>
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														وارد ( أفراد )
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
 											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="box-grid two">
-								<div class="box blue animated zoomIn buttons-action">
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
 
-									<div class="correspondence-t">
-										<div class="d-flex">
-											<div class="">
-												وارد ( أفراد )
 											</div>
-											<div class="mr-auto d-flex">
-												<div class="checkbox">
-													<label>
-														<input type="checkbox" value="">
-														<span class="cr"><i
-																class="cr-icon glyphicon glyphicon-ok"></i></span>
-													</label>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="correspondence-h">
-										<div class="title">
-											وزارة الداخلية
-										</div>
-										<div class="date">
-											28 تشرين الثاني 2018
-										</div>
-									</div>
-									<div class="correspondence-b d-flex flex-wrap">
-										<div class="f-line">
-											<div class="heading">الرقم</div>
-											<div>2233548</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">الأهمية</div>
-											<div class="text-danger">عاجل</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">السرية</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">النوع</div>
-											<div>تعميم</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">السرية</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">التصنيف</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">أيام التأخير</div>
-											<div>22</div>
-										</div>
-										<div class="f-line w-big">
-											<div class="heading">الموعد المحدد</div>
-											<div>28 تشرين الثاني 2019</div>
-										</div>
+									<div class="box-grid two">
+										<div class="box blue animated zoomIn buttons-action">
 
-									</div>
-									<div class="correspondence-icon w-100 d-inline-block">
-										<div class="d-inline-block">
-											<a class="circle color-blue" href="#"><i class="la la-pencil"></i></a>
-											<a class="circle color-red" href="#"><i class="la la-plus-square"></i></a>
-											<a class="circle color-gray" href="#"><i class="la la-file-text"></i></a>
-										</div>
-										<div class="d-inline-block pull-left">
-											<div class="info">
-												<i class="la la-paperclip"></i>
-												<span class=""><span>10</span> مرفقات </span>
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														وارد ( أفراد )
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
 											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="box-grid two">
-								<div class="box blue animated zoomIn buttons-action">
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
 
-									<div class="correspondence-t">
-										<div class="d-flex">
-											<div class="">
-												وارد ( أفراد )
 											</div>
-											<div class="mr-auto d-flex">
-												<div class="checkbox">
-													<label>
-														<input type="checkbox" value="">
-														<span class="cr"><i
-																class="cr-icon glyphicon glyphicon-ok"></i></span>
-													</label>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="correspondence-h">
-										<div class="title">
-											وزارة الداخلية
-										</div>
-										<div class="date">
-											28 تشرين الثاني 2018
-										</div>
-									</div>
-									<div class="correspondence-b d-flex flex-wrap">
-										<div class="f-line">
-											<div class="heading">الرقم</div>
-											<div>2233548</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">الأهمية</div>
-											<div class="text-danger">عاجل</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">السرية</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">النوع</div>
-											<div>تعميم</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">السرية</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">التصنيف</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">أيام التأخير</div>
-											<div>22</div>
-										</div>
-										<div class="f-line w-big">
-											<div class="heading">الموعد المحدد</div>
-											<div>28 تشرين الثاني 2019</div>
-										</div>
+									<div class="box-grid two">
+										<div class="box blue animated zoomIn buttons-action">
 
-									</div>
-									<div class="correspondence-icon w-100 d-inline-block">
-										<div class="d-inline-block">
-											<a class="circle color-blue" href="#"><i class="la la-pencil"></i></a>
-											<a class="circle color-red" href="#"><i class="la la-plus-square"></i></a>
-											<a class="circle color-gray" href="#"><i class="la la-file-text"></i></a>
-										</div>
-										<div class="d-inline-block pull-left">
-											<div class="info">
-												<i class="la la-paperclip"></i>
-												<span class=""><span>10</span> مرفقات </span>
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														وارد ( أفراد )
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
 											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="box-grid two">
-								<div class="box blue animated zoomIn buttons-action">
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
 
-									<div class="correspondence-t">
-										<div class="d-flex">
-											<div class="">
-												وارد ( أفراد )
 											</div>
-											<div class="mr-auto d-flex">
-												<div class="checkbox">
-													<label>
-														<input type="checkbox" value="">
-														<span class="cr"><i
-																class="cr-icon glyphicon glyphicon-ok"></i></span>
-													</label>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="correspondence-h">
-										<div class="title">
-											وزارة الداخلية
-										</div>
-										<div class="date">
-											28 تشرين الثاني 2018
-										</div>
-									</div>
-									<div class="correspondence-b d-flex flex-wrap">
-										<div class="f-line">
-											<div class="heading">الرقم</div>
-											<div>2233548</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">الأهمية</div>
-											<div class="text-danger">عاجل</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">السرية</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">النوع</div>
-											<div>تعميم</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">السرية</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">التصنيف</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">أيام التأخير</div>
-											<div>22</div>
-										</div>
-										<div class="f-line w-big">
-											<div class="heading">الموعد المحدد</div>
-											<div>28 تشرين الثاني 2019</div>
-										</div>
+									<div class="box-grid two">
+										<div class="box blue animated zoomIn buttons-action">
 
-									</div>
-									<div class="correspondence-icon w-100 d-inline-block">
-										<div class="d-inline-block">
-											<a class="circle color-blue" href="#"><i class="la la-pencil"></i></a>
-											<a class="circle color-red" href="#"><i class="la la-plus-square"></i></a>
-											<a class="circle color-gray" href="#"><i class="la la-file-text"></i></a>
-										</div>
-										<div class="d-inline-block pull-left">
-											<div class="info">
-												<i class="la la-paperclip"></i>
-												<span class=""><span>10</span> مرفقات </span>
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														وارد ( أفراد )
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
 											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="box-grid two">
-								<div class="box blue animated zoomIn buttons-action">
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
 
-									<div class="correspondence-t">
-										<div class="d-flex">
-											<div class="">
-												وارد ( أفراد )
 											</div>
-											<div class="mr-auto d-flex">
-												<div class="checkbox">
-													<label>
-														<input type="checkbox" value="">
-														<span class="cr"><i
-																class="cr-icon glyphicon glyphicon-ok"></i></span>
-													</label>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="correspondence-h">
-										<div class="title">
-											وزارة الداخلية
-										</div>
-										<div class="date">
-											28 تشرين الثاني 2018
-										</div>
-									</div>
-									<div class="correspondence-b d-flex flex-wrap">
-										<div class="f-line">
-											<div class="heading">الرقم</div>
-											<div>2233548</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">الأهمية</div>
-											<div class="text-danger">عاجل</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">السرية</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">النوع</div>
-											<div>تعميم</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">السرية</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">التصنيف</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">أيام التأخير</div>
-											<div>22</div>
-										</div>
-										<div class="f-line w-big">
-											<div class="heading">الموعد المحدد</div>
-											<div>28 تشرين الثاني 2019</div>
-										</div>
+									<div class="box-grid two">
+										<div class="box blue animated zoomIn buttons-action">
 
-									</div>
-									<div class="correspondence-icon w-100 d-inline-block">
-										<div class="d-inline-block">
-											<a class="circle color-blue" href="#"><i class="la la-pencil"></i></a>
-											<a class="circle color-red" href="#"><i class="la la-plus-square"></i></a>
-											<a class="circle color-gray" href="#"><i class="la la-file-text"></i></a>
-										</div>
-										<div class="d-inline-block pull-left">
-											<div class="info">
-												<i class="la la-paperclip"></i>
-												<span class=""><span>10</span> مرفقات </span>
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														وارد ( أفراد )
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
 											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="box-grid two">
-								<div class="box blue animated zoomIn buttons-action">
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
 
-									<div class="correspondence-t">
-										<div class="d-flex">
-											<div class="">
-												وارد ( أفراد )
 											</div>
-											<div class="mr-auto d-flex">
-												<div class="checkbox">
-													<label>
-														<input type="checkbox" value="">
-														<span class="cr"><i
-																class="cr-icon glyphicon glyphicon-ok"></i></span>
-													</label>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="correspondence-h">
-										<div class="title">
-											وزارة الداخلية
-										</div>
-										<div class="date">
-											28 تشرين الثاني 2018
-										</div>
-									</div>
-									<div class="correspondence-b d-flex flex-wrap">
-										<div class="f-line">
-											<div class="heading">الرقم</div>
-											<div>2233548</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">الأهمية</div>
-											<div class="text-danger">عاجل</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">السرية</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">النوع</div>
-											<div>تعميم</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">السرية</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">التصنيف</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">أيام التأخير</div>
-											<div>22</div>
-										</div>
-										<div class="f-line w-big">
-											<div class="heading">الموعد المحدد</div>
-											<div>28 تشرين الثاني 2019</div>
-										</div>
-
-									</div>
-									<div class="correspondence-icon w-100 d-inline-block">
-										<div class="d-inline-block">
-											<a class="circle color-blue" href="#"><i class="la la-pencil"></i></a>
-											<a class="circle color-red" href="#"><i class="la la-plus-square"></i></a>
-											<a class="circle color-gray" href="#"><i class="la la-file-text"></i></a>
-										</div>
-										<div class="d-inline-block pull-left">
-											<div class="info">
-												<i class="la la-paperclip"></i>
-												<span class=""><span>10</span> مرفقات </span>
-											</div>
-										</div>
-									</div>
 								</div>
+
 							</div>
-							<div class="box-grid two">
-								<div class="box blue animated zoomIn buttons-action">
-
-									<div class="correspondence-t">
-										<div class="d-flex">
-											<div class="">
-												وارد ( أفراد )
-											</div>
-											<div class="mr-auto d-flex">
-												<div class="checkbox">
-													<label>
-														<input type="checkbox" value="">
-														<span class="cr"><i
-																class="cr-icon glyphicon glyphicon-ok"></i></span>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="correspondence-h">
-										<div class="title">
-											وزارة الداخلية
-										</div>
-										<div class="date">
-											28 تشرين الثاني 2018
-										</div>
-									</div>
-									<div class="correspondence-b d-flex flex-wrap">
-										<div class="f-line">
-											<div class="heading">الرقم</div>
-											<div>2233548</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">الأهمية</div>
-											<div class="text-danger">عاجل</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">السرية</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">النوع</div>
-											<div>تعميم</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">السرية</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">التصنيف</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">أيام التأخير</div>
-											<div>22</div>
-										</div>
-										<div class="f-line w-big">
-											<div class="heading">الموعد المحدد</div>
-											<div>28 تشرين الثاني 2019</div>
-										</div>
-
-									</div>
-									<div class="correspondence-icon w-100 d-inline-block">
-										<div class="d-inline-block">
-											<a class="circle color-blue" href="#"><i class="la la-pencil"></i></a>
-											<a class="circle color-red" href="#"><i class="la la-plus-square"></i></a>
-											<a class="circle color-gray" href="#"><i class="la la-file-text"></i></a>
-										</div>
-										<div class="d-inline-block pull-left">
-											<div class="info">
-												<i class="la la-paperclip"></i>
-												<span class=""><span>10</span> مرفقات </span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="box-grid two">
-								<div class="box blue animated zoomIn buttons-action">
-
-									<div class="correspondence-t">
-										<div class="d-flex">
-											<div class="">
-												وارد ( أفراد )
-											</div>
-											<div class="mr-auto d-flex">
-												<div class="checkbox">
-													<label>
-														<input type="checkbox" value="">
-														<span class="cr"><i
-																class="cr-icon glyphicon glyphicon-ok"></i></span>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="correspondence-h">
-										<div class="title">
-											وزارة الداخلية
-										</div>
-										<div class="date">
-											28 تشرين الثاني 2018
-										</div>
-									</div>
-									<div class="correspondence-b d-flex flex-wrap">
-										<div class="f-line">
-											<div class="heading">الرقم</div>
-											<div>2233548</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">الأهمية</div>
-											<div class="text-danger">عاجل</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">السرية</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">النوع</div>
-											<div>تعميم</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">السرية</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">التصنيف</div>
-											<div>عادي</div>
-										</div>
-										<div class="f-line">
-											<div class="heading">أيام التأخير</div>
-											<div>22</div>
-										</div>
-										<div class="f-line w-big">
-											<div class="heading">الموعد المحدد</div>
-											<div>28 تشرين الثاني 2019</div>
-										</div>
-
-									</div>
-									<div class="correspondence-icon w-100 d-inline-block">
-										<div class="d-inline-block">
-											<a class="circle color-blue" href="#"><i class="la la-pencil"></i></a>
-											<a class="circle color-red" href="#"><i class="la la-plus-square"></i></a>
-											<a class="circle color-gray" href="#"><i class="la la-file-text"></i></a>
-										</div>
-										<div class="d-inline-block pull-left">
-											<div class="info">
-												<i class="la la-paperclip"></i>
-												<span class=""><span>10</span> مرفقات </span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-
 						</div>
+						<div role="tabpanel" class="tab-pane" id="sub-tab-2">
+							<div class="boxes">
+								<div class="d-flex flex-wrap align-content-start">
+									<div class="box-grid two">
+										<div class="box bluedark animated zoomIn buttons-action">
 
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														معاملة داخلية
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
+
+											</div>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+													<a class="circle color-green" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-orange" href="#"><i
+															class="la la-plus-square"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="box-grid two">
+										<div class="box blue animated zoomIn buttons-action">
+
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														وارد ( أفراد )
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
+
+											</div>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="box-grid two">
+										<div class="box blue animated zoomIn buttons-action">
+
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														وارد ( أفراد )
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
+
+											</div>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="box-grid two">
+										<div class="box blue animated zoomIn buttons-action">
+
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														وارد ( أفراد )
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
+
+											</div>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="box-grid two">
+										<div class="box blue animated zoomIn buttons-action">
+
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														وارد ( أفراد )
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
+
+											</div>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="box-grid two">
+										<div class="box blue animated zoomIn buttons-action">
+
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														وارد ( أفراد )
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
+
+											</div>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="box-grid two">
+										<div class="box blue animated zoomIn buttons-action">
+
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														وارد ( أفراد )
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
+
+											</div>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="box-grid two">
+										<div class="box blue animated zoomIn buttons-action">
+
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														وارد ( أفراد )
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
+
+											</div>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+
+							</div>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="sub-tab-3">
+							<div class="boxes">
+								<div class="d-flex flex-wrap align-content-start">
+									<div class="box-grid two">
+										<div class="box bluedark animated zoomIn buttons-action">
+
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														معاملة داخلية
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
+
+											</div>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+													<a class="circle color-green" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-orange" href="#"><i
+															class="la la-plus-square"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="box-grid two">
+										<div class="box blue animated zoomIn buttons-action">
+
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														وارد ( أفراد )
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
+
+											</div>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="box-grid two">
+										<div class="box blue animated zoomIn buttons-action">
+
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														وارد ( أفراد )
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
+
+											</div>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="box-grid two">
+										<div class="box blue animated zoomIn buttons-action">
+
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														وارد ( أفراد )
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
+
+											</div>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="box-grid two">
+										<div class="box blue animated zoomIn buttons-action">
+
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														وارد ( أفراد )
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
+
+											</div>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="box-grid two">
+										<div class="box blue animated zoomIn buttons-action">
+
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														وارد ( أفراد )
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
+
+											</div>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="box-grid two">
+										<div class="box blue animated zoomIn buttons-action">
+
+											<div class="correspondence-t">
+												<div class="d-flex">
+													<div class="">
+														وارد ( أفراد )
+													</div>
+													<div class="mr-auto d-flex">
+														<div class="checkbox">
+															<label>
+																<input type="checkbox" value="">
+																<span class="cr"><i
+																		class="cr-icon glyphicon glyphicon-ok"></i></span>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="correspondence-h">
+												<div class="title">
+													وزارة الداخلية
+												</div>
+												<div class="date">
+													28 تشرين الثاني 2018
+												</div>
+											</div>
+											<div class="correspondence-b d-flex flex-wrap">
+												<div class="f-line">
+													<div class="heading">الرقم</div>
+													<div>2233548</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">الأهمية</div>
+													<div class="text-danger">عاجل</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">النوع</div>
+													<div>تعميم</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">السرية</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">التصنيف</div>
+													<div>عادي</div>
+												</div>
+												<div class="f-line">
+													<div class="heading">أيام التأخير</div>
+													<div>22</div>
+												</div>
+												<div class="f-line w-big">
+													<div class="heading">الموعد المحدد</div>
+													<div>28 تشرين الثاني 2019</div>
+												</div>
+
+											</div>
+											<div class="correspondence-icon w-100 d-inline-block">
+												<div class="d-inline-block">
+													<a class="circle color-blue" href="#"><i
+															class="la la-pencil"></i></a>
+													<a class="circle color-red" href="#"><i
+															class="la la-plus-square"></i></a>
+													<a class="circle color-gray" href="#"><i
+															class="la la-file-text"></i></a>
+												</div>
+												<div class="d-inline-block pull-left">
+													<div class="info">
+														<i class="la la-paperclip"></i>
+														<span class=""><span>10</span> مرفقات </span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+
+							</div>
+						</div>
 					</div>
+
 				</div>
 
 			</div>

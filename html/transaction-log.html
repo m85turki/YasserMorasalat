@@ -767,7 +767,120 @@
                                     </nav>
                                 </div>
                             </div>
-                            <div role="tabpanel" class="tab-pane" id="sub-tab-3">.rrrrrrrrrrrrr</div>
+                            <div role="tabpanel" class="tab-pane" id="sub-tab-3">
+                                <div class="row m-0 my-2">
+                                    <div class="w-100 text-left">
+                                        <label class="cursor-pointer dark-color mx-2 filter-target">
+                                            <i class="sort-icons icon-filter mx-1"></i>تصفية
+                                        </label>
+                                        <label class="cursor-pointer dark-color mx-2 sort-target">
+                                            <i class="sort-icons icon-sort mx-1"></i>ترتيب حسب
+                                        </label>
+                                    </div>
+                                    <div class="filter-box filter">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <label for="">المستخدم الذي قام بالحركة</label>
+                                                    <select placeholder="اختر" id="inputState" class="form-control">
+                                                        <option selected="">اختر</option>
+                                                        <option>.....</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <label for="">نوع الحركة</label>
+                                                    <select placeholder="اختر" id="inputState" class="form-control">
+                                                        <option selected="">اختر</option>
+                                                        <option>.....</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <label for="">تاريخ الحركة</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text hyperlink">
+                                                                <a href="#"><i class="far fa-calendar-alt"></i></a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="filter-box sort">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                                                    <label for="">تاريخ الحركة</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text hyperlink">
+                                                                <a href="#"><i class="far fa-calendar-alt"></i></a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>المستخدم الذي قام بالحركة</th>
+                                                <th>نوع الحركة</th>
+                                                <th>تاريخ\وقت الحركة</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>اسم المستخدم</td>
+                                                <td>نوع الحركة</td>
+                                                <td>28 تشرين الثاني 2019 10:00pm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>اسم المستخدم</td>
+                                                <td>نوع الحركة</td>
+                                                <td>28 تشرين الثاني 2019 10:00pm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>اسم المستخدم</td>
+                                                <td>نوع الحركة</td>
+                                                <td>28 تشرين الثاني 2019 10:00pm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>اسم المستخدم</td>
+                                                <td>نوع الحركة</td>
+                                                <td>28 تشرين الثاني 2019 10:00pm</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="w-100 p-2 text-center">
+                                    <nav aria-label="Page navigation">
+                                        <ul class="pagination custom-pagination">
+                                            <li class="change-page">
+                                                <a href="#" aria-label="Previous">
+                                                    <i class="fa fa-caret-right"></i>
+                                                </a>
+                                            </li>
+                                            <li><a href="#">1</a></li>
+                                            <li class="active"><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li class="change-page">
+                                                <a href="#" aria-label="Next">
+                                                    <i class="fa fa-caret-left"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="tab-2">
@@ -1028,13 +1141,13 @@
     <script>
         $(document).ready(function () {
             $('.filter-target').click(function () {
-                $('.filter-box.filter').toggle();
+                $(this).parent().parent().find('.filter-box.filter').toggle();
                 $('.sort-target').removeClass("active");
                 $(this).toggleClass("active");
                 $('.filter-box.sort').hide();
             });
             $('.sort-target').click(function () {
-                $('.filter-box.sort').toggle();
+                $(this).parent().parent().find('.filter-box.sort').toggle();
                 $('.filter-target').removeClass("active");
                 $(this).toggleClass("active");
                 $('.filter-box.filter').hide();

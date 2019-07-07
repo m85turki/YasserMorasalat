@@ -142,6 +142,7 @@ color:#ff3636;
 {
     border-color: #E7E7E7;
     white-space: normal;
+    text-align:center;
 }
 .table.table-striped > thead > tr {
     color: #000;
@@ -280,6 +281,7 @@ color:#ff3636;
 {
     color: #262B56;
     border: 0px; 
+    background-color: transparent;
     border-bottom: 5px solid #3290E9;
     position:relative;
 }
@@ -348,6 +350,47 @@ color:#ff3636;
     color: #C3C3C3;
 }
 /** end no data section **/
+/** selected transaction section **/
+.selected-transaction
+{
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+    background: #d8d9d9;
+    box-shadow: 0px -5px 20px -2px #00000052;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+.selected-transaction-box
+{
+    display: none;
+    padding: 10px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    border: 1px solid #d4d1d1;
+    background: #e8e8e8;
+}
+.selected-transaction-btn
+{
+    margin-bottom:0px;
+}
+.selected-transaction-btn:hover
+{
+    color:#337ab7;
+}
+.selected-transaction-btn.active
+{
+    color:#337ab7;
+    font-weight: 600;
+    margin-bottom:10px;
+}
+.selected-transaction-box .box
+{
+    overflow: hidden;
+    border-radius: 5px;
+}
+/** end selected transaction section **/
 /** modal **/
 .fade.in
 {
@@ -370,7 +413,7 @@ color:#ff3636;
 }
 .small-dialog
 {
-max-width: 400px;
+    max-width: 400px;
 }
 /** end modal **/
 /** custom tree **/
