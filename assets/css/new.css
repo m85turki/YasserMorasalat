@@ -363,7 +363,8 @@ input:focus:-ms-input-placeholder {
     text-align: center;
     vertical-align: middle;
     line-height: 2.2rem;
-    margin: 0px 2px;
+    margin: 2px;
+    display:inline-block;
 }
 
     .correspondence-icon a.circle.color-blue{
@@ -378,6 +379,12 @@ input:focus:-ms-input-placeholder {
     .correspondence-icon a.circle.color-gray{
         background: #7A7A7A;
     }
+    .correspondence-icon a.circle.color-green{
+        background: #09843b;
+    }
+    .correspondence-icon a.circle.color-orange{
+        background: #ef8600;
+    }
 
     .correspondence-icon a.circle.color-blue:hover{
         background: rgba(59, 25, 126, 0.75);
@@ -388,6 +395,12 @@ input:focus:-ms-input-placeholder {
     .correspondence-icon a.circle.color-gray:hover{
         background: rgba(122, 122, 122, 0.75);
     }
+    .correspondence-icon a.circle.color-green:hover{
+        background: rgba(0, 156, 13, 0.75);
+    }
+    .correspondence-icon a.circle.color-orange:hover{
+        background: rgba(224, 157, 0, 0.75);
+    }
     
 .correspondence-icon .info{
     font-size: 12pt;
@@ -395,10 +408,11 @@ input:focus:-ms-input-placeholder {
     line-height: 1.1rem;
     margin: 4px 2px;
     color: #86889B !important;
+    min-width:75px;
 }
 
 .correspondence-icon .info span{
-    font-size: 10pt;
+    font-size: 8pt;
 }
 
 .f-line {
