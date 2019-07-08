@@ -8,8 +8,15 @@ html body .app-content.content
     margin-top:-10px;
     padding-bottom:10px;
 }
+.bg-unset
+{
+    background:unset!important;
+}
 .dark-color {
     color: #262B56;
+}
+.blue-color {
+    color: #3290E9;
 }
 .color-red
 {
@@ -26,6 +33,26 @@ color:#ff3636;
 .h-100
 {
     height:100%;
+}
+.font-15P
+{
+    font-size:15px;
+}
+.font-18P
+{
+    font-size:18px;
+}
+.font-20P
+{
+    font-size:20px;
+}
+.font-22P
+{
+    font-size:22px;
+}
+.font-24P
+{
+    font-size:24px;
 }
 .circle-icon{
     border-radius: 50%;
@@ -80,6 +107,10 @@ color:#ff3636;
 }
 .main-menu.menu-light .navigation>li.nav-item>a {
     padding-left: 5px;
+}
+.position-relative
+{
+    position:relative;
 }
 /*** buttons **/
 .btn
@@ -416,6 +447,101 @@ color:#ff3636;
     max-width: 400px;
 }
 /** end modal **/
+/** header notifications **/
+.header-notifications
+{
+    display: none;
+}
+.header-notifications
+{
+    position: absolute;
+    background: #fff;
+    min-width: 250px;
+    right: -110px;
+    top: 0;
+    border-radius: 5px;
+    z-index: 100;
+    box-shadow: 0px 0px 10px 0px #00000063;
+}
+.header-notification-row
+{
+    border-top: 1px solid #E9E9E8;
+    cursor: pointer;
+    padding: 8px 4px;
+}
+.header-notification-row *
+{
+    cursor: pointer;
+}
+.header-notification-row:hover
+{
+    background-color: #fafafa;
+}
+.header-notification-row.new-notification
+{
+    background-color: #f7f7f7;
+}
+.show-more
+{
+    color:#337ab7!important;
+    display: block;
+    text-align:center;
+    width:100%;
+    font-size:15px!important;
+}
+.show-more:hover
+{
+    color:#262B56!important;
+}
+.new-notification label
+{
+    color:#337ab7;
+}
+/** end header notifications **/
+/** notifications **/
+.site-color.main-title .new-notifications-count
+{
+    font-size:20px;
+    color:#3290E9;
+}
+.notification-row
+{
+    border-top: 1px solid #E9E9E8;
+    cursor: pointer;
+}
+.notification-row *
+{
+    cursor: pointer;
+}
+.notification-row:hover
+{
+    background-color: #fafafa;
+}
+.notification-row.new-notification
+{
+    background-color: #f7f7f7;
+}
+.notification-title
+{
+    font-size:22px;
+}
+.notification-icon
+{
+    width: 60px;
+    height: 60px;
+    background-color: #353C77;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    line-height: 80px;
+    vertical-align: middle;
+}
+.notification-icon i
+{
+    font-size:45px;
+    color:#fff;
+}
+/** end notifications **/
 /** custom tree **/
 .custom-tree .panel-group
 {
