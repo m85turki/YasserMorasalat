@@ -77,7 +77,8 @@ color:#ff3636;
 .white-container
 {
     background: #fff;
-    border-radius: 3px;
+    border-radius: 8px;
+    overflow: hidden;
     padding:10px;
     box-shadow: 0px 8px 20px 5px #00000017;
     clear: both;
@@ -201,6 +202,21 @@ color:#ff3636;
 {
     color:#337ab7;
     font-weight: 600;
+}
+.filter-target, .sort-target
+{
+position :relative;
+}
+.filter-target.active::before, 
+.sort-target.active::before {
+    content: '';
+    content: "\f0d8";
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    bottom: -30px;
+    left: 10px;
+    color: #fff;
+    font-size: 32px;
 }
 /** end filter and sort **/
 /*** pagination **/
@@ -465,7 +481,7 @@ color:#ff3636;
 }
 .header-notification-row
 {
-    border-top: 1px solid #E9E9E8;
+    border-top: 1px solid #D8D8D8;
     cursor: pointer;
     padding: 8px 4px;
 }
@@ -479,11 +495,11 @@ color:#ff3636;
 }
 .header-notification-row.new-notification
 {
-    background-color: #f7f7f7;
+    background-color:#F0F4F8;
 }
 .show-more
 {
-    color:#337ab7!important;
+    color:#4A90E2!important;
     display: block;
     text-align:center;
     width:100%;
@@ -493,9 +509,13 @@ color:#ff3636;
 {
     color:#262B56!important;
 }
-.new-notification label
+.header-notification-row label
 {
-    color:#337ab7;
+    color:#838598;
+}
+.header-notification-row label.dark-color
+{
+    color:#61669B;
 }
 /** end header notifications **/
 /** notifications **/
@@ -519,11 +539,11 @@ color:#ff3636;
 }
 .notification-row.new-notification
 {
-    background-color: #f7f7f7;
+    background-color: #F7F7F7;
 }
 .notification-title
 {
-    font-size:22px;
+    font-size:20px;
 }
 .notification-icon
 {

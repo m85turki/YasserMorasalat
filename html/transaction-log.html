@@ -9,15 +9,15 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="theme-color" content="#0c7c5a">
-    <title>وزارة العدل</title>
+    <title>مراسلات</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/bootstrap/css/bootstrap.min.rtl.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <!-- Custom CSS sssssss -->
 
     <!-- Bootstrap Upgrade CSS -->
-    <link href="../assets/bootstrap/css/bootstrap.form.css" rel="stylesheet">
+    <link href="../assets/bootstrap/css/bootstrap.form.rtl.css" rel="stylesheet">
     <link href="../assets/bootstrap/css/bootstrap.grid.css" rel="stylesheet">
     <!-- Custom CSS -->
 
@@ -39,10 +39,14 @@
     <!-- Vertical Menu css-->
     <link rel="stylesheet" type="text/css" href="../assets/plugins/vertical-menu/vertical-menu.min.css">
 
-    <!-- Dawood styles -->
+    <!-- Confirm CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/plugins/confirm/jquery-confirm.min.css" />
+
+    <!-- Dawood CSS -->
     <link href="../assets/css/dawood-style.css" rel="stylesheet">
 
 </head>
+
 
 
 <body class="vertical-layout vertical-menu 2-columns   menu-flipped fixed-navbar " data-open="click"
@@ -1141,13 +1145,13 @@
     <script>
         $(document).ready(function () {
             $('.filter-target').click(function () {
-                $(this).parent().parent().find('.filter-box.filter').toggle();
+                $(this).parent().parent().find('.filter-box.filter').toggle('fast');
                 $('.sort-target').removeClass("active");
                 $(this).toggleClass("active");
                 $('.filter-box.sort').hide();
             });
             $('.sort-target').click(function () {
-                $(this).parent().parent().find('.filter-box.sort').toggle();
+                $(this).parent().parent().find('.filter-box.sort').toggle('fast');
                 $('.filter-target').removeClass("active");
                 $(this).toggleClass("active");
                 $('.filter-box.filter').hide();
