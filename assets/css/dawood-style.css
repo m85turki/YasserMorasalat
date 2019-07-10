@@ -12,6 +12,14 @@ html body .app-content.content
 {
     background:unset!important;
 }
+.bg-light-blue
+{
+    background-color: #D5E1EF;
+}
+.bg-light-gray
+{
+    background-color: #ECEFF0;
+}
 .dark-color {
     color: #262B56;
 }
@@ -25,6 +33,10 @@ color:#ff3636;
 .w-auto
 {
     width:auto;
+}
+.w-50
+{
+    width:50%;
 }
 .w-100
 {
@@ -113,10 +125,23 @@ color:#ff3636;
 {
     position:relative;
 }
+.border-0
+{
+    border:0;
+} 
+.border-radius-0
+{
+    border-radius: 0;
+}
 /*** buttons **/
 .btn
 {
     min-width:80px;
+    outline: 0;
+}
+.btn:focus
+{
+    box-shadow: unset;
 }
 .btn-primary{
     border: 1px solid #4a91e3;
@@ -155,6 +180,22 @@ color:#ff3636;
 {
     color:#fff;
     background-color: #262B56;
+}
+.btn.btn-light-blue
+{
+    background-color: #D5E1EF;
+}
+.btn.btn-light-blue:hover
+{
+    background-color: #fefefe;
+}
+.btn.btn-gray
+{
+    background-color: #ECEFF0;
+}
+.btn.btn-gray:hover
+{
+    background-color: #fefefe;
 }
 /*** end buttons **/
 /*** tables **/

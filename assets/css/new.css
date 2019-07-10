@@ -421,6 +421,9 @@ input:focus:-ms-input-placeholder {
     width: 33.33331%;
 }
 
+.f-line.w-medium {
+    width: 50%;
+}
 .f-line.w-big {
     width: 66.666%;
 }
