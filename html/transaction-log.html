@@ -1145,13 +1145,13 @@
     <script>
         $(document).ready(function () {
             $('.filter-target').click(function () {
-                $(this).parent().parent().find('.filter-box.filter').toggle('fast');
+                $(this).parent().parent().find('.filter-box.filter').slideToggle('fast');
                 $('.sort-target').removeClass("active");
                 $(this).toggleClass("active");
                 $('.filter-box.sort').hide();
             });
             $('.sort-target').click(function () {
-                $(this).parent().parent().find('.filter-box.sort').toggle('fast');
+                $(this).parent().parent().find('.filter-box.sort').slideToggle('fast');
                 $('.filter-target').removeClass("active");
                 $(this).toggleClass("active");
                 $('.filter-box.filter').hide();

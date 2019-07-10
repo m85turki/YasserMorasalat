@@ -209,14 +209,17 @@ position :relative;
 }
 .filter-target.active::before, 
 .sort-target.active::before {
-    content: '';
     content: "\f0d8";
     font-family: 'Font Awesome 5 Free';
     position: absolute;
-    bottom: -30px;
-    left: 10px;
+    bottom: -8px;
+    right: 6px;
     color: #fff;
-    font-size: 32px;
+    font-size: 27px;
+    line-height: 11px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background: #0000000d;
 }
 /** end filter and sort **/
 /*** pagination **/
