@@ -803,7 +803,7 @@ li.list-group-item.has-sub:not(:first-child)::before {
     border-bottom: 1px solid #E9E9E8;
     cursor: pointer;
     position: relative;
-    padding: 7px 5px;
+    padding: 10px 5px;
 }
 .chat-row *
 {
