@@ -156,6 +156,7 @@
                             <li><a href="#">تقارير</a></li>
                             <li><a href="#">لوحة الإشراف</a></li>
                             <li><a href="#">بيان التسليم</a></li>
+                            <li><a href="#">بحث</a></li>
                         </ul>
 
                     </div>
@@ -165,96 +166,68 @@
 
     </div>
     <div class="content_wrapper">
-        <div class="content_container">
-            <div class="d-flex flex-column flex-lg-row">
-                <div class="ml-auto filter-link">
-                    <h3 class="site-color mr-3">التوقيع و التأشير</h3>
-                </div>
-            </div>
-            <div class="row m-0">
-                <div class="col-md-5 col-xs-12 mb-2">
-                    <label class="w-100 px-3">التوقيع</label>
-                    <div class="col-xs-6">
-                        <button data-toggle="modal" data-target="#myModal" class="w-100 btn btn-primary btn-lg py-4"><i class="fa Example of paperclip fa-pen ml-3"></i></a>رسم
-                            التوقيع</button>
+        <h3 class="site-color main-title">عرض ومشاركة خطاب المعاملة</h3>
+        <div class="content_container white-container bg-lightest-gray p-2">
+            <div class="row m-0 d-flex">
+                <div class="chat-section col-lg-4 col-md-5 col-sm-12 col-xs-12 align-self-stretch">
+                    <div class="w-100 mt-2">
+                        <img class="circle-img" src="../assets/images/pro_pic.png">
+                        <label class="dark-color font-bold mx-1">اسم الموظف</label>
                     </div>
-                    <div class="col-xs-6">
-                        <button class="w-100 btn btn-primary btn-lg py-4 btn-cancel"><i class="fa Example of paperclip fa-paperclip ml-3"></i>تحميل التوقيع</button>
-                    </div>
-                </div>
-                <div class="col-md-2 col-xs-12"></div>
-                <div class="col-md-5 col-xs-12 mb-2">
-                    <label class="w-100 px-3">التأشير</label>
-                    <div class="col-xs-6">
-                        <button data-toggle="modal" data-target="#myModal" class="w-100 btn btn-primary btn-lg py-4"><i class="fa Example of paperclip fa-pen ml-3"></i>رسم
-                            التأشير</button>
-                    </div>
-                    <div class="col-xs-6">
-                        <button class="w-100 btn btn-primary btn-lg py-4 btn-cancel"><i class="fa Example of paperclip fa-paperclip ml-3"></i>تحميل التأشير</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="px-3 pt-5 text-left">
-            <button type="submit" class="btn btn-dark-blue mx-1 py-3 px-5">حفط</button>
-        </div>
-
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog medium-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h3 class="dark-color w-auto d-inline-block m-0">رسم التوقيع</h3>
-                </div>
-                <div class="modal-body">
-                    <div class="white-container m-0 p-5"></div>
-                    <br>
-                    <div class="text-left">
-                        <button class="nbt btn-primary btn-lg mx-1 mb-2" data-dismiss="modal" data-toggle="modal" data-target="#myModal2">موافق</button>
-                        <button class="btn btn-cancel btn-lg mx-1 mb-2" data-dismiss="modal">الغاء</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <div class="modal fade" id="myModal2" role="dialog">
-        <div class="modal-dialog small-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h3 class="dark-color w-auto d-inline-block m-0">تأكيد حفظ التوقيع</h3>
-                </div>
-                <div class="modal-body">
-                    <label class="w-100 mb-3">لتأكيد حفظ التوقيع يرجى كتابة كلمة المرور</label>
-                    <label class="w-100 mb-1">كلمة المرور</label>
-                    <input type="password" class="form-control">                    
-                    <br>
-                    <div class="row m-0">
-                        <div class="col-xs-6">
-                            <button class="nbt btn-primary btn-lg mx-1 mb-2 w-100" data-dismiss="modal">موافق</button>
+                    <hr class="my-3">
+                    <div class="messages">
+                        <div class="message-row receiver">
+                            <img class="circle-img mx-2" src="../assets/images/pro_pic.png">
+                            <label class="message-content">مسا الخير كيف الحال اخ عبد الرحمن انشاء الله بخير</label>
+                            <label class="message-time">02:00 PM</label>
                         </div>
-                        <div class="col-xs-6">
-                            <button class="btn btn-cancel btn-lg mx-1 mb-2 w-100" data-dismiss="modal">الغاء</button>
+                        <div class="message-row sender">
+                            <img class="circle-img mx-2" src="../assets/images/pro_pic.png">
+                            <label class="message-content">اهلا اخ محمود الحمدلله بخير</label>
+                            <label class="message-time">02:00 PM</label>
+                        </div>
+                        <div class="message-row receiver">
+                            <img class="circle-img mx-2" src="../assets/images/pro_pic.png">
+                            <label class="message-content">هل انت جاهز ؟؟</label>
+                            <label class="message-time">02:11 PM</label>
+                        </div>
+                        <div class="message-row sender">
+                            <img class="circle-img mx-2" src="../assets/images/pro_pic.png">
+                            <label class="message-content">نعم اخ محمود جاهز</label>
+                            <label class="message-time">02:20 PM</label>
                         </div>
                     </div>
+                    <div class="message-input">
+                        <input placeholder="نص الكتابة" type="text" class="form-control" />
+                        <i class="la la-send"></i>
+                    </div>
+                </div>
+                <div class="note-section col-lg-8 col-md-7 col-sm-12 col-xs-12 p-0 d-flex align-self-stretch bg-white">
+                    <div class="border-box p-2 align-self-stretch">
+                        <i class="full-screen-icon fa fa-expand dark-color p-2 border-box mb-1 cursor-pointer"></i>
+                        <i class="full-screen-icon fa fa-compress dark-color p-2 border-box mb-1 cursor-pointer"></i>
+                        <p>
+                            خصثب ثت بهثت قخهبت هخثت ببسينرؤ شتثخه تر
+                            ثقهت خرت هخثهتقر ختثخ تترخ ثترش
+                            ختثقهخترخهثقت رخهثرهخش تثرثقهر سيمتسيتر ستر
+                            خصثب ثت بهثت قخهبت هخثت ببسينرؤ شتثخه تر
+                            ثقهت خرت هخثهتقر ختثخ تترخ ثترش
+                            ختثقهخترخهثقت رخهثرهخش تثرثقهر سيمتسيتر ستر
+                            خصثب ثت بهثت قخهبت هخثت ببسينرؤ شتثخه تر
+                            ثقهت خرت هخثهتقر ختثخ تترخ ثترش
+                            ختثقهخترخهثقت رخهثرهخش تثرثقهر سيمتسيتر ستر
+                            خصثب ثت بهثت قخهبت هخثت ببسينرؤ شتثخه تر
+                            ثقهت خرت هخثهتقر ختثخ تترخ ثترش
+                            ختثقهخترخهثقت رخهثرهخش تثرثقهر سيمتسيتر ستر
+                            خصثب ثت بهثت قخهبت هخثت ببسينرؤ شتثخه تر
+                            ثقهت خرت هخثهتقر ختثخ تترخ ثترش
+                            ختثقهخترخهثقت رخهثرهخش تثرثقهر سيمتسيتر ستر
+                        </p>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
-
-
 
     <!-- jQuery -->
     <script src="../assets/js/jquery.js"></script>
@@ -278,6 +251,18 @@
         })
     </script>
 
+    <!-- Select2 JS -->
+    <script src="../assets/plugins/select2/select2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.select2-with').select2();
+        });
+        $('.select2-without').select2({
+            minimumResultsForSearch: -1
+        });
+    </script>
+
+
     <!-- Vertical Menu css-->
     <script src="../assets/plugins/vertical-menu/vendors.min.js"></script>
     <script src="../assets/plugins/vertical-menu/app-menu.min.js"></script>
@@ -285,6 +270,25 @@
 
     <!-- jquery-confirm JS -->
     <script type="text/javascript" src="../assets/plugins/confirm/jquery-confirm.min.js"></script>
+
+   <!-- full screen scripts -->
+   <script>
+        $(document).ready(function(){
+            $('.full-screen-icon.fa-expand').click(function(){
+                $('.note-section').css('width' , '100%');
+                $('.chat-section').hide();
+                $('.full-screen-icon.fa-compress').css('display','inline-block');
+                $(this).hide();
+            });
+            $('.full-screen-icon.fa-compress').click(function(){
+                $('.note-section').css('width' , 'inhirit');
+                $('.chat-section').show();
+                $('.full-screen-icon.fa-expand').css('display','inline-block');
+                $(this).hide();
+            });
+        });
+    </script>
+
 
 </body>
 
