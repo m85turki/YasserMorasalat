@@ -27,6 +27,9 @@ html body .app-content.content
 .dark-color {
     color: #262B56;
 }
+.gray-color {
+    color: #A2A2A2;
+}
 .blue-color {
     color: #3290E9;
 }
@@ -791,6 +794,10 @@ li.list-group-item.has-sub:not(:first-child)::before {
 }
 /** end custom tree **/
 /** chat **/
+.search-employee-input
+{
+    width:calc(100% - 50px);
+}
 .chat-row
 {
     border-bottom: 1px solid #E9E9E8;

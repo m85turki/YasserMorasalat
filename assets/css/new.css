@@ -379,6 +379,12 @@ input:focus:-ms-input-placeholder {
     .correspondence-icon a.circle.color-gray{
         background: #7A7A7A;
     }
+    .correspondence-icon a.circle.color-light-gray{
+        background: #fefefe;
+    }
+    .correspondence-icon a.circle.color-light-gray:hover{
+        background: #f7f7f7;
+    }
     .correspondence-icon a.circle.color-green{
         background: #09843b;
     }
