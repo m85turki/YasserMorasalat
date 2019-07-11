@@ -91,7 +91,7 @@ color:#ff3636;
     background: #fff;
     border-radius: 8px;
     overflow: hidden;
-    padding:10px;
+    padding:15px;
     box-shadow: 0px 8px 20px 5px #00000017;
     clear: both;
     margin-bottom: 30px;
@@ -132,6 +132,10 @@ color:#ff3636;
 .border-radius-0
 {
     border-radius: 0;
+}
+.hide_trigger {
+    padding: 0 10px;
+    border-bottom: 1px solid #d8d9d9;
 }
 /*** buttons **/
 .btn
@@ -299,7 +303,7 @@ position :relative;
 }
 /** main tabs **/
 .custom-nav-tabs.nav-tabs>li {
-    min-width: 100px;
+    min-width: 95px;
     text-align: center;
 }
 .custom-nav-tabs.nav-tabs>li>a {
